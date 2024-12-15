@@ -44,6 +44,15 @@
         const kakaoScript = document.createElement('script');
         kakaoScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY_MAP}&libraries=services`;
         document.head.appendChild(kakaoScript);
+
+        kakaoScript.onload = () => {
+            console.log("Kakao Maps SDK loaded successfully.");
+            // 추가적인 Kakao Maps 초기화 코드를 여기에 작성
+        };
+    
+        kakaoScript.onerror = () => {
+            console.error("Failed to load Kakao Maps SDK. Check the API key.");
+        };
     </script>    
     
     <div class="search-container-wrapper">
