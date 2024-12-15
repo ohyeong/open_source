@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시할 때 실행
+      - main  # main 브랜치에 푸시할 때 트리거
 
 jobs:
   deploy:
@@ -13,23 +13,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install dependencies (if needed)
-      run: npm install
-
-    - name: Create directories for config.js
-      run: mkdir -p src/pages/classicConcert
-
     - name: Insert API keys
       run: |
         echo "const API_KEY_MAP = '${{ secrets.API_KEY_MAP }}';" > src/pages/classicConcert/config.js
         echo "const API_KEY_WEATHER = '${{ secrets.API_KEY_WEATHER }}';" >> src/pages/classicConcert/config.js
         echo "const API_KEY_SEARCH = '${{ secrets.API_KEY_SEARCH }}';" >> src/pages/classicConcert/config.js
 
-    - name: Build project
-      run: npm run build
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./  # 프로젝트의 루트 디렉터리
