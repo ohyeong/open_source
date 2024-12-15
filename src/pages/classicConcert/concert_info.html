@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="../home/mainPage.html" class="logo">
+        Seoul Armateur<br>Orchestra Club
+    </a>
+    <nav class="menu">
+        <a href="../home/mainPage.html" class="menu-item">Home</a>
+        <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-item">Orchestra Club</a>
+        <a href="concert_info.html" class="menu-item" id="current">Classic Concert</a> 
+        <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+    </nav>
+</header>
+
+<div class="current-menu-bar">
+    <a href="../home/mainPage.html" class="menu-bar-link">
+        <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+    </a>
+    <span class="separator">❯</span>
+    <a href="concert_info.html" class="menu-bar-link">Classic Concert</a>
+</div>
+
+<!-- 내용 -->
+<div class="content">
+    <div class="title-container">
+        <div class="title-rectangle"></div>
+        <h1 class="title">공연 장소 소개</h1>
+    </div>
+
+    <p class="map-description">파란색 마커를 클릭하면 세부 정보를 확인할 수 있습니다.</p>
+    
+    <div id="map"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=&libraries=services"></script>
+    
+    <div class="search-container-wrapper">
+        <div class="search-container">
+            <h4>출발지 검색</h4>
+            <div class="search-input-wrapper">
+                <input type="text" id="startKeyword" placeholder="출발지 키워드 입력" />
+                <button onclick="searchPlaces('start')">검색</button>
+            </div>
+            <ol id="startPlacesList"></ol>
+            <div id="startPagination"></div>
+        </div>
+    
+        <div class="search-container">
+            <h4>도착지 검색</h4>
+            <div class="search-input-wrapper">
+                <input type="text" id="endKeyword" placeholder="도착지 키워드 입력" />
+                <button onclick="searchPlaces('end')">검색</button>
+            </div>
+            <ol id="endPlacesList"></ol>
+            <div id="endPagination"></div>
+        </div>
+    </div>
+    <div class="route-container">
+        <button id="findRouteButton" onclick="findRoute()">길찾기</button>
+        <div id="routeInfo">
+            <h4>경로 정보</h4>
+            <ul id="routeDetails">
+                <li>총거리: <span id="totalDistance">-</span></li>
+                <li>예상시간: <span id="estimatedTime">-</span></li>
+                <li>택시 요금: <span id="taxiFare">-</span></li>
+                <li>통행 요금: <span id="tollFare">-</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="map.js"></script>
+
+
+    <div class="weather-section">
+        <div class="weather-details">
+            <div class="weather-info">
+                <h4>위치: <span id="location">-</span></h4>
+                <p>온도: <span id="temperature">-</span></p>
+            </div>
+            <div id="weather-icon" class="weather-icon"></div>
+            <p id="description">-</p>
+            <p id="custom-remarks">여기에 멘트를 추가하세요!</p>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    
+
+    <div class="dividing_line"></div>
+
+    <div class="title-container">
+        <div class="title-rectangle"></div>
+        <h1 class="title">Today's Classic Concert</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search by club or university...">
+            <ul id="search-results"></ul>
+        </div>
+    </div>
+    <script src="search.js"></script>
+    
+    <div class="concert-list-container">
+        <div id="concert-list" class="concert-list"></div>
+        <div class="pagination">
+            <button id="prev-page" class="pagination-button" disabled><</button>
+            <div id="page-numbers" class="page-numbers"></div>
+            <button id="next-page" class="pagination-button">></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+</div>
+
+</body>
+</html>

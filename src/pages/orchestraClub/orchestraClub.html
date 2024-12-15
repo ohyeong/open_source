@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="title-container">
+                <div class="title-rectangle"></div>
+                <h2 class="title">Seoul Amateur Orchestra Club</h2>
+            </div>
+            <p>Seoul is home to numerous amateur orchestras, many of which are operated by universities, and the total number exceeds 20.</p>
+            <p>This webpage allows you to explore these amateur orchestras all in one place.</p>
+            <p>You can check the locations of the orchestras on the map to the right. By clicking on a marker, you'll be directed to a detailed page with more information about the selected orchestra.</p>
+            <p>You can also use the search feature at the bottom to conveniently find the orchestra you're looking for.</p>
+            <p>This website provides valuable information for music enthusiasts and those interested in amateur orchestral activities in the Seoul area. Discover the history, performance schedules, and ways to participate in various orchestras, and embark on a new musical journey.</p>
+            <p>Our goal is to connect music lovers and share the charm of amateur orchestras with a wider audience. We warmly welcome your visit and hope you enjoy exploring!</p>
+        </div>
+        <div class="map">
+            <img src="../../../public/images/seoul_map_image.png" alt="서울 지도">
+        </div>
+
+        <div class="content2">
+            <div class="title-container">
+                <div class="title-rectangle"></div>
+                <h2 class="title">Today's Orchestra Club</h2>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search by club or university...">
+                    <ul id="search-results"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <button class="slider-btn prev-btn">❮</button>
+            <div class="slider-wrapper">
+                <div class="slider"></div>
+            </div>
+            <button class="slider-btn next-btn">❯</button>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- JavaScript 파일 로드 -->
+    <script src="marker.js"></script>
+    <script src="slider.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

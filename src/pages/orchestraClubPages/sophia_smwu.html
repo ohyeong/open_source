@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">SOPHIA</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/SMWU_sophia.jpg" alt="Orchestra">
+            <div class="intro-text"><br>“함께 연주하며 만들어가는 하모니를 통해 깊은 감동을 전하는 오케스트라 동아리"<br</div>
+            <div class="description">
+                <br>숙명여자대학교 중앙 오케스트라 동아리 소피아(S.O.Phi.A)는 음악을 사랑하는 비전공자들이 모여<br>
+                아름다운 하모니를 만들어가는 아마추어 오케스트라입니다. <br><br>
+                매년 두 차례의 정기 연주회를 통해 클래식 음악뿐만 아니라 영화, 드라마 OST 등 다양한 장르의 곡을 연주하며<br>
+                관객들에게 감동을 선사하고 있습니다. <br>
+                방학 중 주 3회의 연습과 음악캠프를 통해 단원들의 실력을 향상시키고,<br>
+                연습 후에는 단원들 간의 친목을 도모하는 시간을 가지며 끈끈한 팀워크를 자랑합니다.<br><br>
+                소피아는 음악에 대한 열정과 애정을 가진 숙명인이라면 누구나 참여할 수 있는 열린 동아리로,<br>
+                함께 연주하며 만들어가는 하모니를 통해 깊은 감동을 전하고자 합니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/smwu/sophia_29.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 29회 정기연주회</h3>
+                        <p>2024-08-31<br>숙명여자대학교 숙연당</p>
+                        <a href="#" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/smwu/sophia__freshman_27.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 27회 신입생 환영 연주회</h3>
+                        <p>2024-03-02<br><br>⇒ <a href="https://youtu.be/HFEIblyy7SI?si=J4vZSaZyxTCQ1Dq_" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/smwu//sophia__30thanniversary.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>30주년 기념 특별연주회</h3>
+                        <p>2023-09-02<br><br>⇒ <a href="https://youtu.be/4XDK20mwwXQ?si=0aF3jS0dK5u0ImeR" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/smwu/sophia_freshman_26.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 26회 신입생 환영 연주회</h3>
+                        <p>2023-03-04<br><br>⇒ <a href="https://youtu.be/KbRz6hjTR4E?si=O_AHdiiBs7V90H0o" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/smwu/sophia_28.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 28회 정기연주회</h3>
+                        <p>2022-08-30<br><br>⇒ <a href="https://youtu.be/_hi2ZfUFf2A?si=5GERCwbjzzCFaYeU" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1994<span class="small-text">&nbsp;&nbsp;숙명여자대학교 SOPHIA 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2019 <span class="small-text">&nbsp;&nbsp; 제 25회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2019.09.08 지휘 | 박예리   악장 | 정지은   협연 | 이연주<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020 <span class="small-text">&nbsp;&nbsp;제 24회신입생 환영 연주회, 제 26회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2020.04.18 지휘 | 이동우   협연 | 정지윤, 김정수<br></p>
+                        <p>2020.09.12 지휘 | 이동우   협연 | 손자앵<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 27회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.09.12 비대면 정기연주회<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 25회 신입생 환영 연주회, 제 28회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.03.19 지휘 | 이현주<br></p>
+                        <p>2022.08.30 지휘 | 이현주<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 26회 신입생 환영 연주회, 30주년 기념 특별연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.04 지휘 | 이현주<br></p>
+                        <p>2023.09.02 지휘 | 이현주   협연 | 이승언<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 27회 신입생 환영 연주회, 제 29회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.03.02 지휘 | 이현주<br></p>
+                        <p>2024.08.31 지휘 | 서민석<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

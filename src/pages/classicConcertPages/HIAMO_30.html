@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+</head>
+
+<body data-club="HIAMO">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" >Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a> 
+    </div>
+    
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+                </div>
+                <div class="concert-info">
+                    <h1 id="concert-title"></h1>
+                    <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                    <p><strong>지휘: </strong>김승원</p>
+                    <p><strong>악장: </strong>이상혁</p>
+                    <p><strong>일자: </strong><span id="concert-date"></span></p>
+                    <p><strong>시간: </strong><span id="concert-time"></span></p>
+                    <p><strong>장소: </strong><span id="concert-location"></span></p>
+                    <br><br><br>
+                    <div class="buttons">
+                            <button>전석무료</button>
+                        </a>
+                        <button class="heart-button">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 공유 팝업 -->
+        <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+        
+        <section id="intro">
+            <h1>Intro</h1>
+            <p>홍익대학교 아마추어 오케스트라 HIAMO는 2024년 제30회 정기 연주회를 맞아
+                <br>'이립(而立)'이라는 주제로 본 공연의 프로그램을 준비했습니다. '이립'이란 30세를 이르는
+                <br>말로, '뜻을 바로 세우고 마음이 확고해지는 시기'를 의미합니다. 제30회 연주회를 맞아
+                <br>HIAMO 또한 동아리의 본질과 뜻을 바로 세우자는 취지에서 본 공연의 제목 또한
+                <br>'이립'으로 선정하게 되었습니다.
+                <br><br>
+                늘 해학과 특유의 익살스러움을 놓지 않았던 로시니, 자유와 해방을 부르질으며 조국을 위해
+                <br>투쟁했던 시벨리우스, 자신만의 음악을 찾기 위해 누구보다도 치열하게 고뇌했던 브람스.
+                <br>비슷한 시기임에도 각기 다른 성격을 가진 세 작곡가의 작품을 통해 HIAMO는 '화음으로
+                <br>하나된다'는 모토의 진정한 의미를 다시 한번 되새깁니다. 관객 여러분들께서는 HIAMO
+                <br>60명의 단원들이 하나의 시공간 속에서 함께 호흡하며 노래하는 'HIAMO가 확고하게
+                <br>일어서기까지의 여정'을 감상하시기 바랍니다. 또한, 본 공연이 주는 '이립'의 의미가 관객
+                <br>여러분의 삶 속에서 각자의 방향을 제시할 이정표를 떠올리는 뜻깊은 시간이 되기 바랍니다.
+                </p>
+        </section>
+
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Rossini.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>G. Rossini (1792. 2. 29 - 1868. 11. 13)</h2>
+                        조아키노 로시니는 이탈리아의 대표적인 오페라 작곡가로, 희극 오페라와 진지한 오페라 모두에서 성공을 거두었다. 그의 음악은 경쾌한 멜로디와 유머, 그리고 활력 넘치는 분위기로 많은 사람들에게 사랑받고 있다. 대표작으로는 세비야의 이발사 (Il Barbiere di Siviglia), 도둑 까치 (La Gazza Ladra), 
+                        이탈리아의 터키인 (Il Turco in Italia) 등이 있으며, 이 작품들은 지금까지도 자주 공연되고 있다.
+                        <br><br>로시니의 작품은 "로시니 크레셴도"라 불리는, 소리를 점차 크게 하며 감정을 고조시키는 기법이 특징적이다. 이러한 스타일은 그의 오페라에 독특한 긴장감과 활기를 더해주었고, 
+                        청중들에게 강렬한 인상을 남겼다. 그는 37세에 작곡 활동을 중단했지만, 이후에도 파리에서 여생을 즐기며 여전히 음악계에서 중요한 인물로 남았다. 
+                        그의 마지막 주요 작품 중 하나인 작은 장엄미사 (Petite messe solennelle)는 은퇴 후에도 그의 창작 열정을 보여주었다.
+                        <br><br>로시니의 작품들은 오늘날까지도 오페라 애호가들에게 큰 즐거움을 선사하며, 그의 음악은 생동감과 풍부한 표현으로 인해 여전히 많은 사랑을 받고 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Sibelius.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>J. Sibelius (1865. 12. 8 - 1857. 9. 20)</h2>
+                        장 시벨리우스는 핀란드를 대표하는 작곡가로, 핀란드의 국민음악을 상징하는 인물이다. 그의 음악은 핀란드의 자연과 민족적 정체성에서 영감을 받아 서정적이고 강렬한 특징을 지닌다. 
+                        대표작으로는 교향곡 7개, 핀란디아 (Finlandia), 그리고 바이올린 협주곡이 있다. 특히 핀란디아는 핀란드의 독립과 민족적 자부심을 표현한 곡으로, 오늘날까지도 국가적인 상징으로 사랑받고 있다.
+                        <br><br>시벨리우스의 음악은 북유럽의 자연을 떠올리게 하는 서정적인 멜로디와 풍부한 관현악 구성이 특징이다. 그의 교향곡들은 전통적인 형식을 유지하면서도 독창적인 구성으로 청중에게 깊은 인상을 남긴다. 바이올린 협주곡은 난이도 높은 기교와 감성적인 선율로 많은 연주자들이 도전하고 싶은 작품으로 꼽힌다.
+                        <br><br>1920년대 이후 시벨리우스는 작곡 활동을 줄였지만, 그의 작품들은 오늘날까지도 전 세계에서 널리 연주되며 많은 사랑을 받고 있다. 그의 음악은 핀란드의 자연과 문화적 정체성을 담아내어 클래식 음악의 중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Brahms.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>J. Brahms (1833. 5. 7 - 1897. 4. 3)</h2>
+                        요하네스 브람스는 독일의 작곡가이자 피아니스트로, 낭만주의 시대의 주요 인물 중 한 명이다. 그는 고전적인 형식을 유지하면서도 낭만적인 감성과 서정성을 조화롭게 표현하여, 
+                        베토벤 이후 가장 중요한 교향곡 작곡가로 평가받고 있다. 브람스의 음악은 정교한 구조와 감정적인 깊이를 결합하여 독특한 매력을 발휘한다.
+                        <br><br>브람스는 함부르크에서 태어나 어린 시절부터 피아노 연주와 작곡에서 뛰어난 재능을 보였다. 그는 청년 시절부터 유럽 여러 도시에서 피아니스트와 지휘자로 활동하며 명성을 쌓았고, 이후 빈에서 작곡 활동을 본격적으로 이어갔다. 
+                        대표작으로는 4개의 교향곡, 바이올린 협주곡, 2개의 피아노 협주곡, 그리고 실내악과 독일 레퀴엠(Ein deutsches Requiem) 등이 있다. 특히 그의 교향곡 제1번은 "베토벤의 제10번 교향곡"으로 불릴 정도로 높이 평가된다.
+                        <br><br>브람스의 음악은 고전주의의 전통을 계승하면서도 풍부한 감정을 담아내어, 낭만주의 시대의 정서와 완벽하게 결합되었다. 그의 멜로디는 깊이 있는 서정성과 함께 힘 있고 웅장한 느낌을 주며, 그의 작품들은 강한 인간미와 감정적 울림으로 많은 청중들에게 감동을 준다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>G. Rossini - La Gazza Ladra Overture</h2>
+            <p>로시니는 당시 주로 성악에 치우쳐져 있던 이탈리아 오페라에 화려하고 풍성한
+                반주를 곳곳에 넣어 여러 사람들을 매료시켰다. 매혹적인 작품의 비결 중
+                하나인 "로시니 크레센도"는 소리의 층을 쌓아가며 점점 크고 높게 몰아치는
+                방법을 말하는데, <도둑까치> 서곡에서도 이 기법을 사용해 생동감과
+                우아함을 표현했다.
+                <br><br>까치는 한국에서는 "반가운 소식이나 손님을 불러온다"고 해서 길조로 여기는
+                반면, 서양에서는 "머리 좋고 얄미운 새"로 여겨진다. 이러한 인식이 로시니의
+                작품 
+                <br><도둑까치>에도 담겨 있다. 까치가 귀족의 집에 있던 은수저를
+                훔쳐가면서 그 집의 하녀로 일하던 니네타가 누명을 쓰고 사형선고를 받는다.
+                다행히 형 집행 직전 범인이 까치임이 밝혀지고 귀족의 도련님 자네토와
+                결혼하는 해피앤딩을 맞이한다.
+                <br><br>서곡은 스네어드럼의 독주로 시작되어 당당하고 씩씩한 행진곡이 울려 퍼진다.
+                위엄 있는 서주가 끝난 뒤 두 개의 주제를 중심으로 진행된다. 긴장감 넘치는
+                현악기의 짧은 음가들로 시작하여 점차 악기군이 쌓이고 크레센도를 통해
+                커지며 클라이맥스를 이룬다. 종결부에서는 템포를 당기어 화려하게 고조되어
+                아름답게 마무리된다.
+                </p>
+                <h2>J. Sibelius - Finlandia (Op.26)</h2>
+                <p>핀란드는 1809년부터 러시아의 지배를 받고 있었고, 19세기 말 니콜라이 2세의 재위
+                    기간 동안 억압은 더욱 심해졌다. 러시아의 압제 속 민족적 정체성에 대해
+                    고민하던 시벨리우스는 핀란드 민중들의 정신을 묘하게 담은 <핀란디아>를
+                    작곡한다.
+                    <br><br>이 곡은 당시 핀란드가 겪은 억압을 표현하듯 공포스럽고 무거운 금관의
+                    연주로 시작된다. 이후 목관의 서정적인 선율과 현의 애달픈 선율로
+                    이어지는데 민중들의 고통과 분노가 담겨있는 듯하다. 애처로운 선율은 점점
+                    고조되고 팀파니와 금관이 무섭고 날카로운 리듬을 연주한다. 투쟁을 다짐한
+                    민중들을 표현하는 이 리듬과 함께 처음에 나왔던 억압의 선율이 계속되며
+                    고난 속 승리에 대한 열망이 드러난다. 이 열망은 장조의 밝은 분위기로 바뀌어
+                    더 힘차게 연주되고, 금관의 날카로운 리듬은 승리의 팡파르로 발전된다.
+                    핀란드의 아름다운 자연을 연상시키는 목관과 현의 평화로운 선율이 흐르고,
+                    앞에서 전개된 힘찬 선율이 재현되며 분위기가 고조된 후 강렬하게
+                    마무리된다.
+                    </p>
+            <h2>J. Brahms - Symphony No.1 in C minor (Op.68)</h2>
+            <p>브람스는 낭만주의 시대 고전파음악의 전통을 지킨 독일의 작곡가이다. 당대
+                유명한 작곡가 슈만은 무명시절 브람스의 천재성을 인지하였고, 『음악신보』에
+                극찬하는 글을 실었다. 이를 통해 브람스는 유명세를 누리게 되었다.
+                독일 음악계는 베토벤의 9개 교향곡 이후 점점 활기를 잃어가고 있었고,
+                답답한 분위기를 쇄신해 줄 교향곡을 고대하고 있었다. 이런 상황 속에서
+                베토벤을 존경하고 그의 음악을 추종했던 브람스는 상당한 부담감을 느꼈다.
+                그의 편지 중 "거인이 내 뒤로 뚜벅뚜벅 쫓아오는 소리를 항상 들어야 한다."
+                고 말한 것을 통해 베토벤의 교향곡을 얼마나 의식하고 있었는지 알 수 있다.
+                20여년의 세월을 들여 작곡한 브람스 교향곡 1번은 "우리는 드디어 제10번
+                교향곡을 얻었다", "제2의 교향곡 시대를 열어준 획기적인 작품"이라는
+                호평을 받았다.
+                </p>
+            
+            <h3>   1악장 - Un poco sostenuto - Allegro - Meno Allegro</h3> 
+            <p>거인의 발걸옴 소리를 표현한 팀파니의 연타로 장엄한 서주가 시작된다. 이 서주는 1악장 전체를 관통하며 중요한
+                역할을 한다. 서주가 끝난 후 제1바이올린의 힘찬 도약으로 1주제를 제시하고, 목관과 현악기가 이어받으며
+                전개된다. 오보에가 연주하는 잔잔한 2주제로 연결되며 곡의 분위기는 멈춘 듯이 고요해진다. 이는 곧바로 비올라로
+                시작되는 '운명의 동기'(베토벤 교향곡 5번 '운명'의 셋잇단음)와 대비를 이루며 긴장감을 극도로 고조시킨다.
+                이어지는 전개부에서는 1주제와 운명의 동기'가 발전되며 클라이맥스로 연결된다. 이후 재현부는 제시부보다 더욱
+                강렬하게 연주되고, 차분하고 평화로운 종결부로 마무리된다.
+            </p>
+            <h3> 2악장 - Andante sostenuto</h3>
+            <p>3/4박자의 차분한 악장으로, 갑작스러운 강박 없이 서정적인 악장이다. 현악 앙상블의 차분한 연주로 1주제를
+                제시한 후, 오보에가 받아 2주제를 노래한다. 현악기들이 부점리듬을 주고받으며 전개되다가 오보에의 부드러운
+                선율로 연결된다. 이 선율을 클라리넷과 첼로가 받아 연주하며 분위기가 고조되고, 팀파니가 여린 트레몰로로
+                매듭을 지어준다. 이후 2악장 처음에 제시된 1주제가 목관의 연주로 재현되고, 2주제는 오보에, 호른, 바이올린
+                독주가 아름답게 연주한다.
+            </p>
+            <h3> 3악장 - Un poco Allegretto e grazioso</h3>
+            <p>전통적인 미뉴에트와 트리오 형식으로, 포르테의 강한 셈여림으로 연주하여 밝은 성격을 띠는 미뉴에트와 여리게
+                <br>연주하여 자유롭게 흐르듯이 연주되는 트리오로 구성된다.
+            </p>
+            <h3> 4악장 - Adagio - Piu Andante - Allegro non troppo, ma con brio - Piu Allegro</h3>
+            <p>큰 규모의 서주로 시작하는데, 1악장과 마찬가지로 서주 이후에 전개될 여러 동기들이 곳곳에 숨겨져 있다. 장대한
+                서주가 끝난 후, 베토벤 교향곡 9번(합창) 환희의 송가를 연상하게 되는 주제를 현악기가 영광스럽게 연주한다. 이
+                주제는 여러 번 반복, 변주되며 여러 고조를 거친다. 이어 흥분이 가라앉고 비극적이고 고요하게 종결부로 향한다.
+                이는 stringendo(점점 빠르게)를 거쳐 열광하게 되고 피날레에 도달한다. 역경과 고난을 이겨내고 당당하게
+                일어선 듯 모든 악기가 다 함께 힘차게 연주하며 C major 화음의 연타로 웅장하게 마무리된다.
+            </p>
+            
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 경기도 고양시 일산동구 중앙로 1286</p>
+            <p><strong>오시는 길:</strong> 3호선 정발산역 3번출구</p>
+            <br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-intro">소개</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+</html>

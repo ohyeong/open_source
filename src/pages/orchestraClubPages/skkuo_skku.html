@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">SKKUO</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/SKKU_skkuo.png" alt="Orchestra">
+            <div class="intro-text"><br>“하모니를 통해 깊은 감동을 선사하는 오케스트라 동아리"<br</div>
+            <div class="description">
+                <br>성균관대학교 오케스트라(SKKUO)는 1987년에 창단된 교내 중앙 동아리로,<br>
+                음악을 사랑하는 학생들이 모여 다양한 연주 활동을 펼치고 있습니다.<br><br>
+                매년 정기 연주회를 비롯하여 다양한 공연을 통해 클래식 음악의 아름다움을 전하고 있으며,<br>
+                단원들의 음악적 성장과 교류를 도모하며 음악을 매개로 한 소통의 장을 마련하고 있습니다.<br>
+                <br>SKKUO는 전공에 상관없이 음악에 대한 열정과 관심이 있는 모든 학생들에게 열려 있으며,<br>
+                함께 연주하며 만들어가는 하모니를 통해 깊은 감동을 선사하고자 합니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/skku/skkuo_fall_38.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 38회 가을연주회</h3>
+                        <p>2024-08-27<br>경기아트센터 대극장</p>
+                        <a href="../classicConcertPages/SKKUO_38.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/skku/skkuo_spring_38.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 38회 봄연주회</h3>
+                        <p>2024-03-02<br><br>⇒ <a href="https://youtu.be/sXE9fDM8x2U?si=GisS2LWWBJZ-o3Yu" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/skku/skkuo_fall_37.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 37회 가을연주회</h3>
+                        <p>2023-08-29<br><br>⇒ <a href="https://youtu.be/bxH_Lu-ptyI?si=2NC2f8Evu0BWOran" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/skku/skkuo_spring_37.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 37회 봄연주회</h3>
+                        <p>2023-02-25<br><br>⇒ <a href="https://youtu.be/HOzdn6_Sb30?si=KuacRR5K5ZRp5cKe" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/skku/skkuo_fall_36.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 36회 가을연주회</h3>
+                        <p>2022-08-28<br><br>⇒ <a href="https://youtu.be/GRl_71-37B0?si=9JkGedSueHEjorQA" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1987<span class="small-text">&nbsp;&nbsp;성균관대학교 SKKUO 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 35회 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.09.04 회장 | 조한서, 김재표   지휘 | 김휘정   악장 | 윤채원<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 36회 봄 &middot; 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.02.27 회장 | 홍현준, 허유경   지휘 | 김휘정   협연 | 박상정, 박원준<br></p>
+                        <p>2022.08.28 회장 | 홍현준, 허유경   지휘 | 김휘정<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 37회 봄 &middot; 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.02.25 회장 | 김연우, 정재훈   지휘 | 김휘정   협연 | 박민우<br></p>
+                        <p>2023.08.29 회장 | 김연우, 정재훈   지휘 | 김휘정<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 38회 봄 &middot; 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.03.02 회장 | 박도연, 이지연   지휘 | 장예은<br></p>
+                        <p>2023.08.29 회장 | 박도연, 이지연   지휘 | 김휘정   협연 | 조민규<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

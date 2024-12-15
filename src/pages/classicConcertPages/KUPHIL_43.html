@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+</head>
+
+<body data-club="KUPHIL">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" >Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a> 
+    </div>
+    
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+                </div>
+                <div class="concert-info">
+                    <h1 id="concert-title"></h1>
+                    <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                    <p><strong>지휘: </strong>이현주</p>
+                    <p><strong>악장: </strong>송승화</p>
+                    <p><strong>일자: </strong><span id="concert-date"></span></p>
+                    <p><strong>시간: </strong><span id="concert-time"></span></p>
+                    <p><strong>장소: </strong><span id="concert-location"></span></p>
+                    <br><br><br>
+                    <div class="buttons">
+                        <button>전석무료</button>
+
+                        <button class="heart-button">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+         <!-- 공유 팝업 -->
+         <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+
+        <section id="conductor">
+            <h1>지휘자 소개</h1>
+            <div class="conductor-info">
+                <img src="../../../public/images/conductors/leehyunjoo.jpg" alt="Conductor">
+                <div class="conductor-details">
+                <p><h2>지휘 | 이현주</h2>
+                    <br>세종체임버홀 음악영재 콘서트 작품발표
+                    <br>음악영재콩쿠르 작곡부문 교육감상 단독수상
+                    <br>숙명여자대학교 음악대학 작곡과 졸업
+                    <br>한양대학교 대학원 관현악지휘 정공 석사 2기 재학
+                    <br>Ekkehard klemm (독일 드레스덴 국립음대 지휘과 교수) 에게 마스터 클래스 사사
+                   <br>Min-on International Conductor's Seminar in Korea 수료
+                </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Mozart.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>W. A. Mozart (1756. 1. 27 - 1791. 12. 5)</h2>
+                        <br>볼프강 아마데우스 모차르트는 오스트리아의 고전주의 작곡가로, 음악사에서 가장 위대한 천재 중 한 명으로 평가받는다. 그는 어린 시절부터 탁월한 음악적 재능을 보여 일찍이 유럽 여러 나라를 여행하며 다양한 음악적 경험을 쌓았다. 모차르트는 교향곡, 오페라, 협주곡, 실내악 등 거의 모든 장르에서 뛰어난 작품을 남겼으며, 그의 음악은 명확한 형식, 서정적인 멜로디, 그리고 깊이 있는 감정 표현이 특징적이다.
+                        <br><br>모차르트의 대표작으로는 교향곡 제40번, 레퀴엠, 오페라 피가로의 결혼, 돈 조반니, 마술피리 등이 있다. 그의 오페라는 극적인 표현과 음악적 구성이 완벽하게 결합되어 인물의 감정을 생생하게 전달하며, 교향곡과 협주곡에서는 다채로운 화성과 아름다운 선율이 돋보인다. 특히 레퀴엠은 그의 마지막 미완성 작품으로, 죽음을 앞둔 그의 심정이 잘 반영되어 있다.
+                        <br><br>모차르트는 35세의 짧은 생애 동안 약 600여 곡에 달하는 방대한 작품을 남겼으며, 그의 음악은 고전주의의 정수를 보여주는 동시에 낭만주의로의 전환점을 제시했다. 그의 작품들은 오늘날까지도 전 세계에서 자주 연주되며, 많은 사람들에게 깊은 감동과 영감을 주고 있다. 모차르트의 음악은 뛰어난 기교와 예술적 감성으로 가득하며, 클래식 음악의 중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Schubert.png" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>F. P. Schubert (1797. 1. 31 - 1828. 11. 9)</h2>
+                        <br>프란츠 페터 슈베르트는 오스트리아의 낭만주의 작곡가로, 그의 짧은 생애 동안 방대한 양의 작품을 남긴 인물이다. 그는 특히 가곡(Lied)의 대가로 유명하며, 서정적인 멜로디와 깊은 감정을 담아낸 노래들을 많이 작곡했다. 슈베르트는 오페라, 교향곡, 실내악, 피아노 소품 등 다양한 장르에서도 뛰어난 작품을 남겼으며, 그의 음악은 인간의 감정과 아름다움을 섬세하게 표현한 것으로 평가받는다.
+                        <br><br>슈베르트의 대표작으로는 미완성 교향곡 (교향곡 제8번), 아름다운 물방앗간의 아가씨 (Die schöne Müllerin), 겨울 나그네 (Winterreise)와 같은 가곡집, 그리고 즉흥곡과 피아노 5중주 "송어" 등이 있다. 그의 가곡은 아름답고 서정적인 멜로디와 시적인 가사를 통해 낭만적인 감정을 깊이 전달하며, 특히 겨울 나그네는 인간의 내면적인 고독과 슬픔을 표현한 걸작으로 여겨진다.
+                        <br><br>슈베르트는 생전에 크게 인정받지 못하고 경제적으로 어려운 삶을 살았으나, 사후에 그의 음악적 가치는 점점 더 높이 평가되었다. 특히 그의 가곡과 교향곡들은 낭만주의 음악의 정수를 보여주는 중요한 작품들로 자리잡았다. 그는 31세의 짧은 생애 동안 약 600곡 이상의 가곡과 수많은 기악곡을 남기며 낭만주의 음악에 큰 영향을 미쳤고, 그의 음악은 오늘날까지도 많은 이들에게 사랑받고 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>W. A. Mozart - Le Nozze Di Figaro Overture</h2>
+            <p>모차르트의 "피가로의 결혼 서곡"은 그의 대표적인 오페라 "피가로의 결혼"의 시작을 알리는 곡으로, 약 4~5분 길이의 경쾌하고 빠른 템포가 특징이다. 소나타 형식으로 작곡된 이 서곡은 독립적인 형태를 유지하면서도 밝고 활기찬 분위기를 유지하며, 현악기와 목관악기의 생동감 있는 연주가 조화를 이룬다. 서곡의 활발한 리듬과 빠르게 변화하는 화음은 오페라의 유머러스하고 드라마틱한 줄거리를 암시하며, 모차르트 특유의 기발하고 우아한 표현을 통해 관객에게 강렬한 에너지를 전달한다.
+            </p>
+
+            <h2>W. A. Mozart - Symphony No.40 in G minor (K. 550)</h2>
+            <p>
+                볼프강 아마데우스 모차르트의 "교향곡 제40번 G단조 (K. 550)"은 그의 후기 교향곡 중 하나로, 고전주의 음악의 걸작으로 평가받는 작품이다. 이 교향곡은 감정적이고 드라마틱한 분위기를 지니고 있으며, 모차르트가 남긴 단 두 개의 단조 교향곡 중 하나로서, 그의 예술적 깊이와 인간적인 감정이 잘 담겨 있다. 1788년에 작곡된 이 곡은 종종 "비극적"이라는 수식어가 붙을 만큼 애수 어린 감정과 강렬한 표현으로 청중에게 깊은 인상을 남긴다.
+            </p>
+            <h3>   1악장 - Molto allegro</h3> 
+            <p> 활기차면서도 긴장감 있는 주제로 시작하며, 현악기의 빠르고 리드미컬한 선율이 곡 전체를 이끈다. 주제의 반복과 발전이 매우 역동적이며, 그 속에서 고뇌와 슬픔, 에너지가 섞인 복잡한 감정을 느낄 수 있다.
+            </p>
+            <h3> 2악장 - Andante</h3>
+            <p>이 악장은 비교적 평온하고 부드러운 선율을 지니며, 첫 악장의 강렬함과 대조를 이룬다. 느리고 서정적인 멜로디가 중심을 이루며, 곡 전반에 걸쳐 차분한 분위기를 유지하면서도 여전히 감정적인 깊이를 표현한다.
+            </p>
+            <h3> 3악장 - Menuetto: Allegretto</h3>
+            <p>이 악장은 날카로운 리듬과 강렬한 주제가 특징인 고전적인 메뉴에트 형식을 따른다. 다소 엄격하고 긴장감 있는 메뉴에트 부분과 더 부드러운 트리오 부분이 대조를 이루며, 전체적으로 활기차고 위엄 있는 분위기를 자아낸다.
+            </p>
+            <h3> 4악장 - Allegro assai</h3>
+            <p>마지막 악장은 빠르고 강렬한 에너지로 가득 차 있으며, 첫 악장의 비극적인 느낌을 다시 불러온다. 이 악장은 힘찬 리듬과 복잡한 대위법적인 전개가 특징이며, 끝까지 강한 긴장감을 유지하며 드라마틱하게 마무리된다.
+            </p>
+
+            <h2>F. Schubert - Symphony No.9 in C Major (D. 944)</h2>
+            <p>프란츠 슈베르트의 "교향곡 제9번 C장조, (D. 944)", 흔히 "그레이트 (The Great)" 교향곡으로 불리는 이 작품은 슈베르트의 교향곡 중 가장 웅장하고 길이가 긴 걸작이다. 이 교향곡은 1828년 슈베르트의 사망 직전에 완성된 것으로 추정되며, 그의 성숙한 작곡 스타일과 장대한 음악적 비전을 잘 보여준다. 곡은 풍부한 선율, 강렬한 감정 표현, 그리고 고전적인 구조와 낭만적인 성향이 어우러져 청중에게 깊은 감동을 준다.
+            </p>
+            <h3>   1악장 - Andante - Allegro ma non troppo</h3> 
+            <p> 서정적이고 장대한 도입부로 시작하며, 이후 힘찬 관악기 주제와 현악기 반주가 결합된 알레그로로 전환된다. 이 악장은 활기차고 생동감 넘치는 분위기와 함께 슈베르트의 뛰어난 선율 감각이 잘 드러난다.
+            </p>
+            <h3> 2악장 - Andante con moto</h3>
+            <p>부드럽고 서정적인 분위기의 악장으로, 목관악기의 따뜻한 선율과 현악기의 조화로운 반주가 특징이다. 이 악장은 고요한 느낌과 강렬한 대비를 보여주며, 감성적이고 목가적인 분위기가 강조된다.
+            </p>
+            <h3> 3악장 - Scherzo: Allegro vivace</h3>
+            <p>경쾌하고 리드미컬한 악장으로, 활기찬 리듬과 다이내믹한 전개가 특징이다. 스케르초 부분은 힘차고 생동감 있으며, 트리오에서는 더 차분하고 우아한 선율이 제시되며 대비를 이루어 악장의 다양성을 더한다.
+            </p>
+            <h3> 4악장 - Allegro vivace</h3>
+            <p>피날레는 웅장하고 힘찬 악장으로, 슈베르트 특유의 반복적이고 점진적인 전개 방식이 돋보인다. 빠르고 활기찬 리듬이 지속되며, 클라이맥스에서는 모든 악기가 함께 어우러져 장대한 마무리를 이루어 곡의 완성도를 높인다.
+            </p>
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 경기도 과천시 통영로5 </p>
+            <p><strong>오시는 길:</strong> 4호선 : 정부과천청사역 9번, 10번 출구방향으로 나오시면 시민회관 지하 통로로 연결되어 있습니다.</p>
+
+            <br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-conductor">지휘자</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+</html>

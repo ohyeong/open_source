@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+
+</head>
+
+
+
+<body data-club="ACES">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a>
+    </div>
+
+
+
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+            </div>
+            <div class="concert-info">
+                <h1 id="concert-title"></h1>
+                <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                <p><strong>지휘: </strong>박대명</p>
+                <p><strong>악장: </strong>최현아</p>
+                <p><strong>일자: </strong><span id="concert-date"></span></p>
+                <p><strong>시간: </strong><span id="concert-time"></span></p>
+                <p><strong>장소: </strong><span id="concert-location"></span></p>
+                <br><br><br>
+                <div class="buttons">
+                    <a href="https://forms.gle/bkURogRbkT62ebRz5" target="_blank"><button>예매하기</button>
+                    </a>
+                    <button class="heart-button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="share-button">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+         <!-- 공유 팝업 -->
+         <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+
+        <section id="intro">
+            <h1>Intro</h1>
+            <p>가을의 정취 속에서 오페라의 화려한 선율이 펼쳐지는 특별한 연주회가 여러분을 환영합니다. 가을의 매혹적인 아름다움과 오페라의 웅장함이 어우러져 여러분의 마음을 감동시킬 순간들이 기다리고
+                있습니다. ACES와 함께 이 환상적인 음악 여행을 즐겨보아요!
+            </p>
+        </section>
+
+        <section id="conductor">
+            <h1>지휘자 소개</h1>
+            <div class="conductor-info">
+                <img src="../../../public/images/conductors/parkdaemyeong.png" alt="Conductor">
+                <div class="conductor-details">
+                    <p>
+                    <h2>지휘 | 박대명</h2>
+                    <br>독일 카셀 시립 음악원 합창, 오케스트라 지휘
+                    <br>전문연주자 과정 최고 점수 졸업 (Hans Dieter Uhlenbruck 사사)
+                    <br>독일 뷔르츠부르크 국립음대 오케스트라 지휘 Diplom, Master 졸업
+                    <br>프랑크푸르트 오페라 극장(Oper Frankfurt) 합창 부지휘자 겸 어린이 합창 지휘자 역임
+                    <br>2014 에스토니아 국제 지휘아카데미에서 독일, 핀란드, 네덜란드 등 다수의 유럽 오케스트라 지휘
+                    <br><br>현&#41; 가천대학교 음악학부, 성악과 출강, Cantus Firmus Ensemble 대표/음악감독,
+                    <br>율 챔버오케스트라 지휘, 대학 아마추어 오케스트라 연합 AOU 지휘,
+                    <br>가천대학교 의과대학 오케스트라 지휘, 경희대학교, 서강대학교, 한국외국어대학교 아마추어 오케스트라 지휘
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Mozart.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p>
+                    <h2>W. A. Mozart (1756. 1. 27 - 1791. 12. 5)</h2>
+                    <br>볼프강 아마데우스 모차르트는 오스트리아의 고전주의 작곡가로, 음악사에서 가장 위대한 천재 중 한 명으로 평가받는다. 그는 어린 시절부터 탁월한 음악적 재능을 보여 일찍이
+                    유럽 여러 나라를 여행하며 다양한 음악적 경험을 쌓았다. 모차르트는 교향곡, 오페라, 협주곡, 실내악 등 거의 모든 장르에서 뛰어난 작품을 남겼으며, 그의 음악은 명확한 형식,
+                    서정적인 멜로디, 그리고 깊이 있는 감정 표현이 특징적이다.
+                    <br><br>모차르트의 대표작으로는 교향곡 제40번, 레퀴엠, 오페라 피가로의 결혼, 돈 조반니, 마술피리 등이 있다. 그의 오페라는 극적인 표현과 음악적 구성이 완벽하게
+                    결합되어 인물의 감정을 생생하게 전달하며, 교향곡과 협주곡에서는 다채로운 화성과 아름다운 선율이 돋보인다. 특히 레퀴엠은 그의 마지막 미완성 작품으로, 죽음을 앞둔 그의 심정이 잘
+                    반영되어 있다.
+                    <br><br>모차르트는 35세의 짧은 생애 동안 약 600여 곡에 달하는 방대한 작품을 남겼으며, 그의 음악은 고전주의의 정수를 보여주는 동시에 낭만주의로의 전환점을 제시했다.
+                    그의 작품들은 오늘날까지도 전 세계에서 자주 연주되며, 많은 사람들에게 깊은 감동과 영감을 주고 있다. 모차르트의 음악은 뛰어난 기교와 예술적 감성으로 가득하며, 클래식 음악의
+                    중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Bizet.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p>
+                    <h2>F. Mendelssohn (1838. 10. 25 - 1875. 6. 3)</h2>
+                    <br>조르주 비제는 프랑스의 낭만주의 작곡가로, 오페라 카르멘 (Carmen)으로 널리 알려져 있다. 그는 뛰어난 멜로디 감각과 극적인 표현력을 지닌 작곡가로, 짧은 생애 동안
+                    주로 오페라와 관현악곡을 작곡했다. 비제는 파리 음악원에서 공부하며 일찍부터 재능을 인정받았고, 그의 음악은 생동감 있고 감정 표현이 풍부한 것이 특징이다.
+                    <br><br>비제의 대표작인 카르멘은 1875년에 초연된 오페라로, 개성 넘치는 인물과 생생한 멜로디로 청중을 매료시켰다. 이 작품은 당시 사회의 이국적인 분위기와 자유로운
+                    여성의 이미지를 담아내어 많은 논란을 불러일으켰으나, 오늘날에는 가장 많이 공연되는 오페라 중 하나로 자리잡았다. 비제는 이 외에도 아를의 여인 (L'Arlésienne)과 같은
+                    관현악 모음곡에서도 뛰어난 작곡 기법을 선보였다.
+                    <br><br>비제는 36세의 나이로 이른 죽음을 맞이했지만, 그의 음악은 생동감 넘치는 멜로디와 강렬한 감정 표현으로 많은 사람들에게 사랑받고 있다. 특히 카르멘의 음악은
+                    오늘날까지도 많은 오페라 극장과 콘서트에서 자주 연주되며, 그가 남긴 음악적 유산은 낭만주의 오페라의 중요한 부분으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Mendelssohn.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p>
+                    <h2>F. Mendelssohn (1809. 2. 3 - 1847. 11. 4)</h2>
+                    <br>펠릭스 멘델스존은 독일의 낭만주의 작곡가이자 지휘자, 피아니스트로, 고전주의의 형식과 낭만주의의 감성을 결합한 음악을 남긴 인물이다. 그는 모차르트 이후 가장 천재적인
+                    음악가로 평가받으며, 다채로운 작곡 활동을 통해 서정적이고 밝은 분위기의 작품들을 많이 남겼다. 멘델스존은 유럽 전역에서 활동하며 음악 교육과 공연 기획에도 기여하여 낭만주의
+                    음악의 발전에 중요한 역할을 했다.
+                    <br><br>멘델스존의 대표작으로는 한여름 밤의 꿈 (A Midsummer Night's Dream) 서곡과 극음악, 바이올린 협주곡 E단조, 교향곡 스코틀랜드와 이탈리아,
+                    그리고 무언가 (Lieder ohne Worte)라는 피아노 소품집 등이 있다. 한여름 밤의 꿈 서곡은 셰익스피어의 희곡에 영감을 받아 작곡한 것으로, 특히 "결혼 행진곡"은 전
+                    세계적으로 널리 알려져 결혼식에서 자주 연주된다. 그의 바이올린 협주곡 E단조는 화려한 기교와 서정적인 멜로디로 바이올리니스트들 사이에서 가장 사랑받는 협주곡 중 하나다.
+                    <br><br>멘델스존은 또한 바흐의 음악을 재발견하고 부흥시키는 데 중요한 역할을 했다. 그는 1829년 바흐의 마태수난곡을 지휘해 바흐 음악의 가치를 재조명했고, 이를 통해
+                    낭만주의 시대에 바흐의 영향이 다시 확산되는 계기가 되었다. 멘델스존은 38세의 젊은 나이에 세상을 떠났지만, 그의 음악은 지금까지도 많은 사람들에게 사랑받으며 고전주의와
+                    낭만주의의 조화를 보여주는 중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>W. A. Mozart - Le Nozze Di Figaro Overture</h2>
+            <p>모차르트의 "피가로의 결혼 서곡"은 그의 대표적인 오페라 "피가로의 결혼"의 시작을 알리는 곡으로, 약 4~5분 길이의 경쾌하고 빠른 템포가 특징이다. 소나타 형식으로 작곡된 이 서곡은
+                독립적인 형태를 유지하면서도 밝고 활기찬 분위기를 유지하며, 현악기와 목관악기의 생동감 있는 연주가 조화를 이룬다. 서곡의 활발한 리듬과 빠르게 변화하는 화음은 오페라의 유머러스하고
+                드라마틱한 줄거리를 암시하며, 모차르트 특유의 기발하고 우아한 표현을 통해 관객에게 강렬한 에너지를 전달한다.
+            </p>
+            <h2>G. Bizet - Carmen Suite No.1 & Suite No. 2</h2>
+            <p>조르주 비제의 "카르멘 모음곡 1번 & 2번"은 오페라 "카르멘"의 주요 음악을 발췌해 편곡한 관현악 모음곡이다. 이 곡들은 오페라에서 가장 유명한 멜로디와 장면들을 모아 구성되어 있으며,
+                그 독립적인 매력으로 인해 오페라와 별개로 자주 연주된다.
+                <br><br>모음곡 1번은 "아라곤의 곤돌라", "세기디야", "투우사의 행진"과 같은 잘 알려진 멜로디로 이루어져 있어 활기찬 스페인 분위기를 강렬하게 표현한다. 모음곡 2번에서는
+                "나바라의 춤", "집시 춤" 등이 포함되어 더욱 다채롭고 리드미컬한 요소들이 강조된다. 두 모음곡 모두 열정적이고 리드미컬한 스페인 음악의 정수를 담고 있으며, 화려한 오케스트라 편성과
+                비제 특유의 감각적인 선율 덕분에 많은 클래식 연주회에서 사랑받고 있다.
+            </p>
+
+            <h2>F. Mendelssohn - Symphony No.4, (Op.90) Italian</h2>
+            <p>펠릭스 멘델스존의 "교향곡 제4번 A장조, 작품 번호 90, '이탈리아'"는 멘델스존이 이탈리아 여행에서 받은 영감을 바탕으로 작곡한 작품이다. 1830년대 초반에 이탈리아를 여행하며 느낀
+                밝고 생동감 있는 분위기, 그리고 그 지역의 활기찬 문화가 이 교향곡에 잘 담겨 있다. 그는 이 작품을 통해 이탈리아의 따뜻한 날씨, 밝은 색감, 활기찬 전통을 음악적으로 표현하려 했다.
+            </p>
+            <h3> 1악장 - Allegro vivace</h3>
+            <p>밝고 화창한 날씨를 표현한 경쾌하고 활기찬 악장으로, 여행의 기쁨과 흥분을 담고 있다. 현악기의 생동감 있는 연주와 빠른 리듬이 중심을 이루며, 전체적으로 밝고 기분 좋은 분위기를
+                연출한다.
+            </p>
+            <h3> 2악장 - Andante con moto</h3>
+            <p> 종교적 행렬을 연상시키는 차분하고 장중한 악장으로, 멘델스존이 이탈리아 시골에서 본 순례자들의 행진에서 영감을 받았다. 단순한 선율이 반복되며, 목관악기의 차분한 음색이 더해져 고요하고
+                경건한 분위기를 자아낸다.
+            </p>
+            <h3> 3악장 - Con moto moderato</h3>
+            <p>우아하고 부드러운 미뉴에트 형식으로, 오스트리아와 독일의 궁정 무도회를 떠올리게 하는 품격 있는 악장이다. 목관악기의 따뜻한 음색과 금관악기의 조화가 잘 어우러지며, 정교하고 고상한
+                분위기를 형성한다. 중간의 트리오 부분에서는 더욱 부드러운 느낌을 준다.
+            </p>
+            <h3> 4악장 - Saltarello: Presto</h3>
+            <p>이탈리아 전통 춤곡인 살타렐로와 타란텔라에서 영감을 받은 빠르고 활기찬 리듬이 특징이다. 강렬하고 급박한 리듬과 활기찬 선율이 결합되어 청중에게 강한 에너지를 전달하며, 교향곡을 생동감
+                넘치는 피날레로 마무리한다. 악장은 끊임없는 긴장감과 흥겨움으로 가득 차 있다.
+            </p>
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 서울 도봉구 도봉로 552 도봉구민회관</p>
+            <p><strong>오시는 길:</strong> 4호선 쌍문역 1번 출구, 의정부 방향으로 도보 5분.</p>
+            <p><strong>티켓 예매 링크:</strong> <a href="https://forms.gle/bkURogRbkT62ebRz5">바로가기</a></p>
+            <br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-intro">소개</button>
+            <button class="btn-conductor">지휘자</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

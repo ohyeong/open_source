@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">OPUS</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/DGU_opus.jpg" alt="Orchestra">
+            <div class="intro-text"><br>“함께 연주하며 만들어가는 하모니를 통해 깊은 감동을 주는 오케스트라 동아리"<br</div>
+            <div class="description">
+                <br>동국대학교 오케스트라 OPUS는 2002년에 설립된 교내 유일의 필하모닉 관현악 오케스트라 중앙동아리로,<br>
+                다양한 악기를 연주하는 학생들이 모여 클래식 음악을 통해 협동심과 개인의 자질을 향상시키고 친목을 도모하고 있습니다.<br> 
+                매년 11월에 정기연주회를 개최하며,<br>3월부터 매주 월요일과 목요일에 합주를 진행하여 연주회를 준비합니다.<br>
+                또한, 여름방학에는 향상음악회와 음악캠프를 통해 단원들의 악기 실력과 합주 능력을 향상시키고 있습니다. <br><br>
+                OPUS는 전공에 상관없이 음악에 대한 열정과 관심이 있는 모든 학생들에게 열려 있으며,<br>
+                함께 연주하며 만들어가는 하모니를 통해 깊은 감동을 선사하고자 합니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/DGU/opus_23.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 23회 정기연주회</h3>
+                        <p>2024-11-16<br>추계예술대학교 콘서트장</p>
+                        <a href="../classicConcertPages/OPUS_23.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/DGU/opus_22.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 22회 정기연주회</h3>
+                        <p>2023-11-17<br><br>⇒ <a href="https://youtu.be/HFEIblyy7SI?si=J4vZSaZyxTCQ1Dq_" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/DGU/opus_21.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 21회 정기연주회</h3>
+                        <p>2022-11-12<br><br>⇒ <a href="https://youtu.be/4XDK20mwwXQ?si=0aF3jS0dK5u0ImeR" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/DGU/opus_20.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 20회 정기연주회</h3>
+                        <p>2021-08-29<br><br>⇒ <a href="https://youtu.be/KbRz6hjTR4E?si=O_AHdiiBs7V90H0o" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/DGU/opus_19.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 19회 정기연주회</h3>
+                        <p>2022-11-20<br><br>⇒ <a href="https://youtu.be/_hi2ZfUFf2A?si=5GERCwbjzzCFaYeU" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">2002<span class="small-text">&nbsp;&nbsp;동국대학교 OPUS 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020 <span class="small-text">&nbsp;&nbsp; 제 19회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2020.11.20 소규모 실내악 연주회<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 20회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.08.29 지휘 | 한상욱   악장 | 한가현   협연 | 정희정<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 21회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.11.12 지휘 | 한상준   악장 | 한가현<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 22회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.11.17 지휘 | 장예은   악장 | 조예나<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 23회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.11.16 지휘 | 이현주   악장 | 성동하<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

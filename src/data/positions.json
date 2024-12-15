@@ -1,0 +1,110 @@
+[
+    {
+        "title": "ACES 제 28회 가을 연주회",
+        "latLng": { "lat": 37.654058, "lng": 127.038377},
+        "iwRemoveable": false,
+        "address": "서울 도봉구 창동 303",
+        "image": "../../../public/images/orchestra_logo/sogang_aces.jpg",
+        "link": "../classicConcertPages/ACES_28.html",
+        "date": "2024년 11월 15일 오후 7시"
+    },
+    {
+        "title": "HIAMO 30th “이립(而立)”",
+        "latLng": { "lat": 37.660782, "lng": 126.774297},
+        "iwRemoveable": false,
+        "address": "경기 고양시 일산동구 마두동 816",
+        "image": "../../../public/images/orchestra_logo/hongik_hiamo.jpg",
+        "link": "../classicConcertPages/HIAMO_30.html",
+        "date": "2024년 9월 14일 오후 6시 30분"
+    },
+    {
+        "title": "제 11회 연주회 Kiassik",
+        "latLng": { "lat": 37.654189, "lng": 127.038485 },
+        "iwRemoveable": false,
+        "address": "서울 도봉구 창동 303",
+        "image": "../../../public/images/orchestra_logo/kwangwoon_dakapo.jpg",
+        "link": "../classicConcertPages/DaKAPO_11.html",
+        "date": "2024년 8월 17일 오후 5시"
+    },
+    {
+        "title": "고려대 관혁악단 52회 연주회",
+        "latLng": { "lat": 37.589843, "lng": 127.030612},
+        "iwRemoveable": false,
+        "address": "서울 성북구 안암동5가 1-2",
+        "image": "../../../public/images/orchestra_logo/korea_kuorchestra.jpg",
+        "link": "../classicConcertPages/Kurorchestra_52.html",
+        "date": "2024년 8월 24일 오후 7시"
+    },
+    {
+        "title": "SNUPO 제63회 정기연주회",
+        "latLng": { "lat": 37.384609, "lng": 126.931361},
+        "iwRemoveable": false,
+        "address": "경기 안양시 만안구 안양동 550",
+        "image": "../../../public/images/orchestra_logo/seoulNational_snupo.jpg",
+        "link": "../classicConcertPages/SNUPO_63.html",
+        "date": "2024년 8월 29일 오후 7시"
+    },
+    {
+        "title": "SKKUO 제38회 가을 연주회",
+        "latLng": { "lat": 37.261582, "lng": 127.037571},
+        "iwRemoveable": false,
+        "address": "경기 수원시 팔달구 인계동 1117",
+        "image": "../../../public/images/orchestra_logo/sungkyunkwan_skkuo.jpg",
+        "link": "../classicConcertPages/SKKUO_38.html",
+        "date": "2024년 8월 27일 오후 7시 30분"
+    },
+    {
+        "title": "하나클랑 22th 「MISSING」",
+        "latLng": { "lat": 37.556317, "lng": 127.047089},
+        "iwRemoveable": false,
+        "address": "서울 성동구 사근동 110",
+        "image": "../../../public/images/orchestra_logo/hanyang_hanaklang.jpg",
+        "link": "../classicConcertPages/Hanaklang_22.html",
+        "date": "2024년 8월 30일 오후 6시 30분"
+    },
+    {
+        "title": "MDOP 84th 'ILLUSION'",
+        "latLng": { "lat": 37.502174, "lng": 126.766542},
+        "iwRemoveable": false,
+        "address": "경기 부천시 원미구 중동 1156",
+        "image": "../../../public/images/orchestra_logo/kyunghee_mdop.jpg",
+        "link": "../classicConcertPages/MDOP_84.html",
+        "date": "2024년 8월 31일 오후 5시"
+    },
+    {
+        "title": "KUPHIL 43th ECLIPSE: Solar",
+        "latLng": { "lat": 37.428224, "lng": 126.988846},
+        "iwRemoveable": false,
+        "address": "경기 과천시 중앙동 6-2",
+        "image": "../../../public/images/orchestra_logo/konkuk_kuphilharmonic.jpg",
+        "link": "../classicConcertPages/KUPHIL_43.html",
+        "date": "2024년 8월 30일 오후 6시"
+    },
+    {
+        "title": "OPUS 제23회 정기연주회",
+        "latLng": { "lat": 37.563668, "lng": 126.952589},
+        "iwRemoveable": false,
+        "address": "서울 서대문구 북아현동 190-1",
+        "image": "../../../public/images/orchestra_logo/dongguk_opus.jpg",
+        "link": "../classicConcertPages/OPUS_23.html",
+        "date": "2024년 11월 16일 오후 7시"
+    },
+    {
+        "title": "소피아 제29회 정기연주회",
+        "latLng": { "lat": 37.544348, "lng": 126.964107},
+        "iwRemoveable": false,
+        "address": "서울 용산구 청파동3가 115-23",
+        "image": "../../../public/images/orchestra_logo/sookmyung_sophia.jpg",
+        "link": "../classicConcertPages/Sophia_29.html",
+        "date": "2024년 8월 31일 오후 7시"
+    },
+    {
+        "title": "RUBATO 제 63회 정기 연주회",
+        "latLng": { "lat": 37.488401, "lng": 126.770391},
+        "iwRemoveable": false,
+        "address": "경기 부천시 원미구 중동 788",
+        "image": "../../../public/images/orchestra_logo/chungang_rubato.jpg",
+        "link": "../classicConcertPages/RUBATO_63.html",
+        "date": "2024년 8월 18일 오후 7시"
+    }
+]

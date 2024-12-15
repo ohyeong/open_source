@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">Kuorchestra</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/KU_kuorchestra.png" alt="Orchestra">
+            <div class="intro-text"><br>“다양한 활동을 통해 음악을 즐기고 단원들이 가득한 동아리"<br</div>
+            <div class="description">
+                <br>고려대학교 중앙동아리 관현악단은 음악에 대한 열정으로 하나 된 학생들이 함께 만들어가는 오케스트라 동아리입니다.<br>
+                매주 진행되는 정기 활동은 단원들이 각자의 역량을 발전시키고,<br>
+                서로의 조화를 통해 아름다운 음악을 완성할 수 있는 기회를 제공합니다.<br><br>
+                관현악단의 활동은 신입 단원 위주의 연주 모임인 팝스(월요일)를 시작으로,<br>
+                관악기만 모여 연주하는 파이퍼스(수요일), 현악기 중심의 앙상블 MC(목요일),<br>
+                그리고 모든 악기가 함께 완전한 오케스트라를 이루는 집회(화요일)로 구성되어 있습니다.<br><br>
+                초보자도 부담 없이 참여할 수 있도록 문을 활짝 열어둔 동아리로,<br>
+                대학 시절 음악을 배우고 즐길 수 있는 최고의 기회를 제공하고 있다고 자부합니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/ku/kuorchestra_52.png" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 52회 정기연주회</h3>
+                        <p>2024-08-24<br>고려대학교 인촌기념관</p>
+                        <a href="../classicConcertPages/Kurorchestra_52.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/KU/kuorchestra_spring_39.png" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 39회 신춘음악회</h3>
+                        <p>2024-03-02<br><br>⇒ <a href="https://youtu.be/vc82W967kbE?si=uxB_HNdMhC_OZzXR" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/ku/kuorchestra_51.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 51회 정기연주회</h3>
+                        <p>2023-08-19<br><br>⇒ <a href="https://youtu.be/WGAhDZ_rW3k?si=J2oVL6_337ZXUlKO" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/ku/kuorchestra_spring_38.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 38회 신춘음악회</h3>
+                        <p>2023-08-19<br><br>⇒ <a href="https://youtu.be/No7gk7pcpM8?si=XAWxwwK2PKlhnLNv" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/ku/kuorchestra_50.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 50회 정기연주회</h3>
+                        <p>2022-09-03<br><br>⇒ <a href="https://youtu.be/cNUuOUrEx8E?si=HplltwudqX2jIHvO" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1970 <span class="small-text">&nbsp;&nbsp;관현악단 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 49회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.08.19 회장 | 유준   악장 | 이용정   지휘 | 이은구<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 37회 신춘음악회, 제 50회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.02.22 회장 | 박소은   악장 | 정수현   지휘 | 이은구<br></p>
+                        <p>2022.09.03 회장 | 박소은   악장 | 조영준   지휘 | 이은구<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 38회 신춘음악회, 제 51회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.04 회장 | 김다영   악장 | 김지윤   지휘 | 이은구<br></p>
+                        <p>2023.08.19 회장 | 김다영   악장 | 이경신   지휘 | 이은구<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 39회 신춘음악회, 제 52회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.03.02 회장 | 현예찬   악장 | 김지윤   지휘 | 이은구<br></p>
+                        <p>2024.08.24 회장 | 현예찬   악장 | 김한수   지휘 | 이은구<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

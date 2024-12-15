@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">SNUPO</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/SNU_snupo.png" alt="Orchestra">
+            <div class="intro-text"><br>“서로 다른 소리로 하나 된 음악을 만드는 동아리"<br</div>
+            <div class="description">
+                <br>서울대학교 아마추어 오케스트라 SNUPO는 1992년 창단된 클래식 음악 동아리로,<br>
+                전공을 불문하고 음악을 사랑하는 학생들이 모여 진지한 연주 활동을 펼치는 중앙동아리입니다.<br><br>
+                SNUPO는 음악을 진지하게 생각하며 원칙적인 연주를 위해 노력하고,<br>
+                음악의 감동을 최대한 많은 사람들과 나누고자 합니다.<br><br>
+                초보자와 숙련자가 함께 연주하며 서로를 배우고 조화로운 음악을 만들어가는 과정을 소중히 여기며,<br>
+                클래식을 대중적인 문화로 확산하는 데에 기여하고자 합니다.<br><br>
+                특히 클래식이 “소수 전문가의 문화”라는 고정관념을 깨고 “누구나 즐길 수 있는 문화”로 자리 잡을 수 있도록 노력합니다.<br>
+                “서로 다른 소리로 하나 된 음악을 만든다”는 모토 아래,<br>
+                음악의 진지함과 환희를 모든 단원들과 함께 공유하며 성장하는 동아리입니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/snu/snupo_63.png" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 63회 정기연주회</h3>
+                        <p>2024-08-29<br>안양아트센터 관악홀</p>
+                        <a href="#" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/snu/snupo_62.png" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 62회 정기연주회</h3>
+                        <p>2024-02-29<br><br>⇒ <a href="https://youtu.be/ty8TXimzFSY?si=GIJ-JnguhHiaGmvC" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/snu/snupo_61.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 61회 정기연주회</h3>
+                        <p>2023-09-01<br><br>⇒ <a href="https://youtu.be/ItUyz4Px_So?si=_CTXH5649DBit9ON" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/snu/snupo_60.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 60회 정기연주회</h3>
+                        <p>2023-03-02<br><br>⇒ <a href="https://youtu.be/fQaH4_lO_AU?si=k6t5l9VVa3uURF21" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/snu/snupo_59.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 59회 정기연주회</h3>
+                        <p>2022-09-01<br><br>⇒ <a href="https://youtu.be/iniMVL-zSV0?si=RWAVsv1FgFxjchBD" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1992<span class="small-text">&nbsp;&nbsp;서울대학교 악우협회 오케스트라 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 57회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.09.27 회장 | 박재형   지휘 | 이승혁   협연 | 이정환<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 58 &middot; 59회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.03.02 회장 | 박재형   지휘 | 이승혁   협연 | 문영란<br></p>
+                        <p>2022.09.01 회장 | 박재형   지휘 | 이승혁   협연 | 김현지<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 60 &middot; 61회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.02 회장 | 장승민   지휘 | 이준호<br></p>
+                        <p>2023.09.01 회장 | 장승민   지휘 | 이동준<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 62 &middot; 63회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.02.29 회장 | 김동민   지휘 | 문민석   협연 | 박진우<br></p>
+                        <p>2024.08.29 회장 | 김동민   지휘 | 기동현<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

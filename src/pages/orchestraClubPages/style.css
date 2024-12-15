@@ -1,0 +1,306 @@
+/* 전체적인 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 140px; /* 헤더 + 검정 바 높이만큼 여백 추가 */
+}
+
+/*헤더 스타일*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.logo {
+    margin-left: 30px;
+    margin-right: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* 밑줄 제거 */
+    color: black; /* 기본 텍스트 색상 */
+}
+
+.logo:visited {
+    color: black; /* 방문한 후에도 색상을 유지 */
+}
+
+.logo:hover {
+    color: black; /* 마우스 올렸을 때 색상 유지 */
+    text-decoration: none; /* 호버 시 밑줄 제거 */
+}
+
+.logo:active {
+    color: black; /* 클릭 중에도 색상 유지 */
+    text-decoration: none; /* 클릭 중 밑줄 제거 */
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu-item {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-item:hover {
+    color: orange;
+}
+
+/*활성화된 메뉴 항목*/
+#current {
+    color: orange;
+}
+
+.current-menu-bar {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    z-index: 999;
+}
+
+.menu-bar-link {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상을 상속 */
+}
+
+.menu-bar-link:hover {
+    text-decoration: none;
+}
+
+.separator {
+    margin: 0 10px; /* ❯ 양옆에 여백 추가 */
+}
+
+
+/* 왼쪽 고정 버튼 설정 */
+.sidebar {
+    position: fixed;
+    left: 20px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /*padding: -5px;*/
+}
+
+/* 기본 색상: 소개 버튼은 주황색, 연혁 버튼은 검정색으로 시작 */
+.btn-intro {
+    background-color: orange;
+}
+
+.btn-history {
+    background-color: black;
+}
+
+/* 버튼에 가로선 추가 */
+.sidebar button::before {
+    content: "";
+    position: absolute;
+    left: -40px; /* 버튼 왼쪽에 선을 배치 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* 선의 길이를 버튼 가장자리에 닿게 설정 */
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.btn-intro.active::before,
+.btn-history.active::before {
+    background-color: orange;
+}
+
+.btn-intro.active,
+.btn-intro { /* 기본적으로 "소개" 버튼은 활성화된 상태로 시작 */
+    background-color: orange;
+}
+
+.btn-history.active {
+    background-color: orange;
+    color: white;
+}
+
+.btn-intro:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+.small-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 소개 섹션 */
+.section-intro {
+    margin: 0;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-intro img {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 연혁 섹션 */
+.section-history {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    align-items: stretch; /* 같은 행의 요소 높이를 자동으로 동일하게 설정 */
+    grid-auto-rows: minmax(600px,auto);
+}
+
+/* 예매 정보와 타임라인 각각 절반 너비 */
+.history-container {
+    padding-right: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+/* 사진과 예매 정보 한 줄에 배치 */
+.history-item {
+    display: flex;
+    align-items: center;
+}
+
+.history-image {
+    width: 33.3%;
+    padding-right: 20px;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.reservation-info {
+    width: calc(50% - 10px);
+    padding-left: 10px;
+}
+
+/* 타임라인 섹션 스타일 */
+.timeline-container {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 52px;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    height: auto;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.timeline-dot {
+    display: none;
+}
+
+.timeline-year {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timeline-content {
+    padding-left: 20px;
+    border-left: 2px dashed #fff;
+    margin-left: 10px;
+}
+
+.timeline-content p {
+    margin: 8px 0;
+}
+
+
+/* "세부 정보" 버튼 스타일 */
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* "이전 공연 영상 바로가기" 링크 스타일 */
+.btn-link {
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: orange;
+}

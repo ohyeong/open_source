@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+</head>
+
+<body data-club="Sophia">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" >Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a> 
+    </div>
+    
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+                </div>
+                <div class="concert-info">
+                    <h1 id="concert-title"></h1>
+                    <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                    <p><strong>지휘: </strong>서민석</p>
+                    <p><strong>일자: </strong><span id="concert-date"></span></p>
+                    <p><strong>시간: </strong><span id="concert-time"></span></p>
+                    <p><strong>장소: </strong><span id="concert-location"></span></p>
+                    <br><br><br>
+                    <div class="buttons">
+                        <button>전석무료</button>
+
+                        <button class="heart-button">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 공유 팝업 -->
+        <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+
+
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Dvorak.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>A. Dvořák (1841. 9. 8 - 1904. 5. 1)</h2>
+                        <br>안토닌 드보르자크는 체코의 대표적인 작곡가로, 보헤미안 민속 음악의 요소를 서양 고전 음악에 성공적으로 융합한 인물이다. 그의 음악은 민속적 색채와 아름다운 멜로디가 돋보이며, 전통과 현대성을 결합해 독창적인 스타일을 확립했다. 드보르자크는 특히 체코의 문화와 자연에 대한 깊은 애정을 음악에 담아내어, 민족적 정체성을 잘 표현한 작곡가로 평가받는다.
+                        <br><br>드보르자크의 대표작으로는 교향곡 제9번 "신세계로부터" (Symphony No. 9 "From the New World"), 슬라브 무곡 (Slavonic Dances), 그리고 첼로 협주곡 B단조 등이 있다. 신세계 교향곡은 드보르자크가 미국에 머물던 시기에 작곡한 작품으로, 미국의 민속 음악과 체코적 요소가 결합된 독특한 스타일을 보여주며, 오늘날 그의 가장 유명한 작품 중 하나로 꼽힌다. 슬라브 무곡은 체코와 슬라브 지역의 춤과 멜로디를 바탕으로 경쾌하고 활기찬 리듬이 특징이며, 민속적 분위기를 잘 담아내어 큰 인기를 얻었다.
+                        <br><br>드보르자크는 미국에서 잠시 머무르며 뉴욕 음악원 원장으로 활동하며, 현지 음악과 전통을 바탕으로 많은 영감을 얻었다. 그의 음악은 민속적 요소를 대중적으로 풀어낸 방식으로 인해 청중에게 큰 감동을 주며, 오늘날까지도 전 세계적으로 널리 사랑받고 있다. 드보르자크의 작품들은 민족적 정체성과 낭만적인 감성을 담아내며, 클래식 음악의 중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Beethoven.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>Ludwig van Beethoven (1770. 12. 17 - 1827. 3. 26)</h2>
+                        <br>베토벤은 고전주의와 낭만주의를 잇는 다리 역할을 한 독일의 작곡가로, 
+                        음악사에서 가장 영향력 있는 인물 중 한 명이다. 그는 피아노 소나타, 교향곡, 현악 사중주 등 다양한 장르에서 걸작을 남겼다. 
+                        그의 음악은 감정 표현의 깊이와 혁신적인 형식으로 잘 알려져 있으며, 특히 청각 장애를 극복하면서도 계속해서 뛰어난 작품을 작곡해 사람들에게 큰 감동을 주었다.
+                        <br><br>베토벤은 본에서 태어나 어린 시절부터 음악적 재능을 보였으며, 이후 빈으로 이주해 음악 활동을 펼쳤다. 
+                        그의 초기 작품들은 하이든과 모차르트의 영향을 받았으나, 점차 독자적인 스타일을 개발하여 고전 음악의 틀을 넘어서는 혁신을 이루었다. 
+                        대표적인 작품으로는 9개의 교향곡, 32개의 피아노 소나타, 오페라 피델리오, 그리고 수많은 실내악 곡들이 있다.
+                        <br><br>특히 그의 교향곡은 음악사에 큰 전환점을 가져왔다. 
+                        운명 교향곡 (교향곡 제5번)은 극적인 동기를 통해 운명과 싸우는 인간의 모습을 그렸으며, 합창 교향곡 (교향곡 제9번)에서는 '환희의 송가'를 사용해 인류애와 화합의 메시지를 전달했다.
+                        베토벤은 청각을 잃어가는 상황 속에서도 음악을 향한 열정과 창의력을 잃지 않았으며, 그의 후반기 작품들은 인간의 내면적 깊이와 철학적 성찰을 담고 있다. 
+                        그의 음악은 단순히 아름다운 선율을 넘어서, 인간의 감정과 존재의 의미를 탐구하는 깊이 있는 예술로 평가받고 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>L. V Beethoven_ Coriolan Overture in C minor (Op. 62)</h2>
+            <p>루트비히 판 베토벤의 "코리올란 서곡"은 로마의 영웅 코리올라누스의 내적 갈등을 묘사한 작품으로, 극적인 서사를 음악으로 표현한 강렬한 서곡이다. 곡은 두 개의 강한 화음으로 시작해 코리올라누스의 결단력과 분노를 묘사하며, 이어 부드럽고 애절한 멜로디로 그의 내적 고뇌를 표현한다. 마지막에는 점차 약해지며 사라져 가는 듯한 결말로 비극적 최후를 암시한다.
+            </p>
+
+            <h2>A. Dvořák - Czech Suite in D Major (Op.39)</h2>
+            <p>
+                안토닌 드보르자크의 "체코 모음곡 D장조, (Op.39)"은 체코 민속 음악의 매력을 담아낸 작품으로, 1879년에 작곡된 이 곡은 드보르자크가 고향인 체코의 자연과 일상을 음악으로 아름답게 표현하고 있다. 이 모음곡은 다섯 개의 악장으로 구성되어 있으며, 각각의 악장은 체코의 전통적인 춤과 선율에서 영감을 받아 밝고 서정적인 분위기를 유지한다. 이 곡은 청중에게 체코의 풍경과 따뜻한 정서를 전달하는 드보르자크 특유의 음악적 감수성을 잘 보여준다.
+            </p>
+            <h3>   1악장 - Pastorale</h3> 
+            <p> 느리고 평화로운 선율로 시작하며, 전원적인 분위기를 자아낸다. 목관악기와 현악기의 따뜻한 조화가 돋보이며, 마치 고요한 시골 풍경을 묘사하는 듯한 느낌을 준다.
+            </p>
+            <h3> 2악장 - Polka</h3>
+            <p>활기차고 경쾌한 폴카 리듬이 특징인 이 악장은 체코 전통 춤의 즐거움을 표현한다. 밝고 경쾌한 선율이 반복되며 청중에게 기분 좋은 에너지를 전달한다.
+            </p>
+            <h3> 3악장 - Sousedská</h3>
+            <p>느리고 우아한 체코 민속 무곡인 소세트스카 형식으로, 부드럽고 서정적인 멜로디가 중심을 이룬다. 이 악장은 마치 여유로운 춤을 추는 듯한 편안하고 따뜻한 분위기를 자아낸다.
+            </p>
+            <h3> 4악장 - Romance</h3>
+            <p>서정적인 선율이 중심이 되는 악장으로, 감성적이고 애틋한 분위기를 자아낸다. 현악기와 목관악기의 조화가 아름답고, 사랑스러운 멜로디가 곡의 중심을 이룬다.
+            </p>
+            <h3> 5악장 - Furiant</h3>
+            <p>마지막 악장은 빠르고 강렬한 리듬의 퓨리안트로, 체코 민속 춤곡 특유의 에너지가 돋보인다. 역동적인 리듬과 빠른 템포가 곡을 힘차게 마무리하며, 전체 모음곡을 활기차고 인상적으로 끝맺는다.
+            </p>
+
+
+            <h2>L. V Beethoven_ Symphony No.7 in A Major (Op.92)</h2>
+            <p>루트비히 판 베토벤의 "교향곡 제7번 A장조, (Op.92)"는 활기차고 리드미컬한 성격으로 잘 알려진 작품으로, "춤의 교향곡"이라 불리기도 한다. 1812년에 완성된 이 교향곡은 리듬의 강한 강조와 에너지 넘치는 전개로 청중에게 큰 감동을 주며, 베토벤의 교향곡 중에서도 특히 생동감 넘치는 분위기를 자아낸다. 이 곡은 여러 음악적 요소들이 조화롭게 어우러져, 환희와 활력, 그리고 깊은 서정성을 동시에 전달하는 것이 특징이다.
+            </p>
+            <h3>   1악장 - Poco sostenuto - Vivace</h3> 
+            <p> 웅장하고 장엄한 도입부로 시작하며, 이어서 리드미컬하고 활기찬 주제가 등장한다. 이 악장은 리듬적 요소가 매우 강조되며, 에너지와 생동감이 넘치는 전개로 청중을 압도한다.
+            </p>
+            <h3> 2악장 - Allegretto</h3>
+            <p>느리고 차분한 분위기의 이 악장은 매우 유명한 선율을 지니며, 서정적이면서도 약간은 비장한 느낌을 준다. 반복적이고 점진적으로 발전하는 멜로디가 감동적이며, 청중의 마음을 사로잡는 깊이를 가지고 있다.
+            </p>
+            <h3> 3악장 - Presto</h3>
+            <p>경쾌하고 빠른 리듬의 스케르초로, 다이내믹하고 밝은 분위기가 특징이다. 중간의 트리오 부분은 다소 느리고 부드러운 선율로 대비를 이루며, 전체적으로 활기찬 느낌을 잘 살려 준다.
+            </p>
+            <h3> 4악장 - Allegro con brio</h3>
+            <p>마지막 악장은 격렬하고 힘찬 피날레로, 강렬한 에너지와 함께 빠른 리듬이 강조된다. 이 악장은 마치 축제를 연상시키는 듯한 흥겨움으로 가득하며, 베토벤 특유의 환희와 활력을 느낄 수 있는 강렬한 마무리를 이룬다.
+            </p>
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 서울특별시 용산구 청파로47길 99  </p>
+            <p><strong>오시는 길:</strong>4호선 숙대입구역, 1호선 남영역, 6호선 효창공원앞역, 효창공원 방면 15분 도보 </p>
+
+            <br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+
+</html>
