@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 푸시할 때 트리거
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Insert API keys
+      run: |
+        echo "const API_KEY_MAP = '${{ secrets.API_KEY_MAP }}';" > src/pages/classicConcert/config.js
+        echo "const API_KEY_WEATHER = '${{ secrets.API_KEY_WEATHER }}';" >> src/pages/classicConcert/config.js
+        echo "const API_KEY_SEARCH = '${{ secrets.API_KEY_SEARCH }}';" >> src/pages/classicConcert/config.js
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  # 프로젝트의 루트 디렉터리
