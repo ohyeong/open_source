@@ -42,18 +42,20 @@
     <div id="map"></div>
     <script src="config.js"></script>
     <script type="text/javascript">
-      // 동적으로 config.js 파일을 로드합니다.
-      const script = document.createElement("script");
-      script.src = "config.js";
-      script.type = "text/javascript";
-      script.onload = () => {
-        // config.js 파일이 로드된 후 API_KEY_MAP 값을 사용해 지도 스크립트를 동적으로 생성합니다.
-        const mapScript = document.createElement("script");
-        mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY_MAP}&libraries=services`;
-        mapScript.type = "text/javascript";
-        document.head.appendChild(mapScript);
-      };
-      document.head.appendChild(script);
+        // 동적으로 config.js 파일을 로드합니다.
+        const script = document.createElement("script");
+        script.src = "config.js";
+        script.type = "text/javascript";
+        console.log("Do it1");
+        script.onload = () => {
+            // config.js 파일이 로드된 후 API_KEY_MAP 값을 사용해 지도 스크립트를 동적으로 생성합니다.
+            const mapScript = document.createElement("script");
+            mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY_MAP}&libraries=services`;
+            mapScript.type = "text/javascript";
+            document.head.appendChild(mapScript);
+            console.log("Do it2");
+        };
+        document.head.appendChild(script);
     </script>   
     
     <div class="search-container-wrapper">
