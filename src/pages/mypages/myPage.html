@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="../mypages/share.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Amateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item" id="current">My Page</a>
+        </nav>
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator"></span>
+        <a href="../mypages/myPage.html" class="menu-bar-link">My Page</a>
+    </div>
+    
+    <div class="container">    
+        <!-- 제목 및 공연 정보 -->
+        <div class="concert-section">
+            <div class="title-container">
+                <div class="title-rectangle"></div>
+                <h1 class="title">공연 정보 소개</h1>
+            </div>
+
+            <!-- 푸쉬알림 설정 버튼 -->
+            <div class="subscription-container">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="subscribeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span id="subscriptionStatus">구독하기</span>
+            </div>
+    
+            <!-- 탭 버튼 -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="upcoming">예정 공연</button>
+                <button class="tab-button" data-tab="past">지난 공연</button>
+            </div>
+
+            <!-- 예정 공연 -->
+            <div class="concert-list" id="upcoming"></div>
+
+            <!-- 지난 공연 -->
+            <div class="concert-list" id="past" style="display: none;"></div>
+        </div>
+    </div>
+    <!-- 공유 팝업 -->
+    <div id="share-modal" class="share-modal">
+        <div class="share-modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>공유하기</h2>
+            <button id="kakao-share-button">카카오톡 공유하기</button>
+            <button id="clipboard-share-button">링크 복사하기</button>
+        </div>
+    </div>
+
+
+    <script src="mypages_detail.js"></script>
+    <script src="alarm.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">Hanaklang</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/HYU_hanaklang.jpg" alt="Orchestra">
+            <div class="intro-text"><br>“음악을 통해 하나로 어우러지는 동아리"<br</div>
+            <div class="description">
+                <br>한양대학교 아마추어 오케스트라 동아리 하나클랑(HanaKlang)은 2003년에 창단되어,<br>
+                음악을 사랑하는 학생들이 모여 클래식 음악을 연주하는 중앙동아리입니다.<br><br>
+                '최상의 음'을 뜻하는 'A-Klang'과 '한양'의 'Han'이 결합된 이름으로,<br>
+                음악을 통해 하나로 어우러진다는 의미를 담고 있습니다.<br><br>
+                매주 목요일 오후 6시에 정기 연습을 진행하며,<br>
+                정기 연주회와 다양한 공연을 통해 음악적 열정을 나누고 있습니다. <br><br>
+                악기 연주 경험이 없는 초보자부터 숙련자까지 모두 참여할 수 있으며,<br>
+                음악을 통해 단원 간의 유대감을 형성하고 있습니다.<br>
+                하나클랑은 한양대학교에서 가장 인원이 많은 동아리 중 하나로 성장하였으며,<br>
+                학교의 크고 작은 행사에서도 활발히 활동하고 있습니다.<br>
+                음악을 사랑하는 한양인이라면 누구나 함께할 수 있는 열린 동아리입니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/HYU/hanaklang_22.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 22회 정기연주회 MISSING</h3>
+                        <p>2024-08-30<br>백남음악관 콘서트홀</p>
+                        <a href="../classicConcertPages/Hanaklang_22.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/HYU/hanaklang_21.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 21회 정기연주회 고전과 낭만 사이</h3>
+                        <p>2024-02-29<br><br>⇒ <a href="https://youtu.be/jAQIGX6YTpI?si=7v5FGuUnKs-ysqOr" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/HYU/hanaklang_20.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 20회 정기연주회 洪波</h3>
+                        <p>2023-09-01<br><br>⇒ <a href="https://youtu.be/-9fHeYpvCJM?si=Cgtm_1pUcoWSU3ur" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/HYU/hanaklang_19.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 19회 정기연주회 musée</h3>
+                        <p>2023-03-03<br><br>⇒ <a href="https://youtu.be/2ltftnmnR1k?si=XyPe1MVbsR93dtZe" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/HYU/hanaklang_18.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 18회 정기연주회 항해</h3>
+                        <p>2022-08-31<br><br>⇒ <a href="https://youtu.be/IxkC-fDAB7o?si=8WJcin8LKAz2-k1w" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2003<span class="small-text">&nbsp;&nbsp;한양대학교 HANAKLANG 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018 <span class="small-text">&nbsp;&nbsp;제 15회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2018.09.07 지휘 | 이은구   악장 | 나현덕<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2019 <span class="small-text">&nbsp;&nbsp;제 16 &middot; 17회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2019.03.08 지휘 | 김성민   악장 | 박지수   협연 | 박지수<br></p>
+                        <p>2019.09.06 지휘 | 이만열   악장 | 이동수<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 18회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.08.31 지휘 | 이준호   악장 | 장용재<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 19 &middot; 20회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.03 지휘 | 기동현   악장 | 조현욱<br></p>
+                        <p>2023.09.01 지휘 | 기동현   악장 | 남윤서<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 21 &middot; 22회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.02.29 지휘 | 신주용   악장 | 유재휘<br></p>
+                        <p>2024.08.30 지휘 | 신주용   악장 | 유재휘<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

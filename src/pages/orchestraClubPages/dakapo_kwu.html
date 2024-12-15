@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">DaKAPO</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/KWU_dakapo.jpg" alt="Orchestra">
+            <div class="intro-text"><br>“처음부터”라는 의미를 담아, 초심을 잃지 않고 음악에 대한 열정을 이어가는 동아리</div>
+            <div class="description">
+                <br>광운대학교 아마추어 오케스트라 DaKAPO는 이름처럼 “처음부터”라는 의미를 담아,<br>
+                초심을 잃지 않고 음악에 대한 열정을 이어가는 동아리입니다.<br>
+                2017년에 창단된 이후 현재까지 꾸준히 정기 연주회를 개최하며,<br>단원들의 노력과 헌신을 통해 매년 아름다운 하모니를 선보이고 있습니다.<br><br>
+                DaKAPO는 베토벤의 명언인 “고난과 시련의 시기에서 흔들리지 않는 것. 이는 이 시대의 진정한 위인의 증거이다.”에 깊이 감명받아,<br>
+                음악을 연주하며 겪는 도전과 시련 속에서도 흔들리지 않는 열정을 실천하고자 합니다.<br>
+                수많은 노력이 쌓여 하나의 곡을 완성해 나가는 과정 속에서,<br>
+                단원들은 음악이 지닌 순간의 소중함과 그 깊이를 경험하고 있습니다.<br><br>
+                과거가 있기에 미래가 존재하듯, 고전 속에 담긴 이야기들을 연주하는 DaKAPO는<br>
+                관객들에게 음악을 통해 시간과 공간을 초월한 감동을 전하는 오케스트라입니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/kwu/dakapo_11.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 11회 연주회 Kiassik</h3>
+                        <p>2024-11-04<br>동해문화예술관</p>
+                        <a href="../classicConcertPages/DaKAPO_11.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/kwu/dakapo_10.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 10회 연주회 BRILLANTE</h3>
+                        <p>2024-03-09<br><br>⇒ <a href="https://youtu.be/Rg3vJiYJF3s?si=p9uehl62UlU2GIH5" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/kwu/dakapo_9.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 09회 연주회 traversee</h3>
+                        <p>2023-08-12<br><br>⇒ <a href="https://youtu.be/x7gNl5M2ScA?si=0NyIORGQab2vJk4d" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/kwu/dakapo_progressrecital.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 9회 향상음악회</h3>
+                        <p>2023-05-06<br><br>⇒ <a href="https://youtu.be/nlAETRbIF40?si=o00GNKw6BpUvmc7h" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/kwu/dakapo_8.png" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 08회 연주회 낭만</h3>
+                        <p>2023-03-18<br><br>⇒ <a href="https://youtu.be/eNfrirSrUNY?si=OkFrxrW9jmlQ2Amw" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">2017 <span class="small-text">&nbsp;&nbsp;다카포 창단 &middot; 창단 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2017.02.14 초대회장 | 임가현<br></p>
+                        <p>2017.08.31 회장 | 임가현   악장 | 조승윤   지휘 | 안민호<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018 <span class="small-text">&nbsp;&nbsp;제 2 &middot; 3회 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2018.03.09 회장 | 이정윤   악장 | 조승윤   지휘 | 안민호<br></p>
+                        <p>2018.10.31 회장 | 강지수   악장 | 정유섭   지휘 | 최광희<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2019 <span class="small-text">&nbsp;&nbsp;제 4 &middot; 5회 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2019.05.03 회장 | 임민영   악장 | 이민규   지휘 | 최광희<br></p>
+                        <p>2019.10.31 회장 | 임민영   악장 | 맹채윤   지휘 | 최광희<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 6 &middot; 7회 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.02.11 회장 | 안희범   악장 | 이민규   지휘 | 정예진<br></p>
+                        <p>2022.08.13 회장 | 안성현   악장 | 전지유   지휘 | 선중규<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 8 &middot; 9회 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.18 회장 | 박서현   악장 | 이민규   지휘 | 선중규<br></p>
+                        <p>2023.08.12 회장 | 박서현   악장 | 박재서   지휘 | 선중규<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 10회 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.03.09 회장 | 심승우   악장 | 박채서   지휘 | 김지혜</p>
+                        <p>2024.11.04 회장 | 김태민   악장 | 이주수   지휘 | 김지혜</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">MDOP</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/KHU_mdop.jpg" alt="Orchestra">
+            <div class="intro-text"><br>“아름다운 선율을 통해 모두가 하나 되는 오케스트라 동아리"<br</div>
+            <div class="description">
+                <br>경희대학교 아마추어 오케스트라 KHUMDOP는 1977년에 창단된 중앙동아리로,<br>
+                클래식 음악에 대한 열정과 사랑을 바탕으로 활동하고 있습니다.<br><br>
+                매년 두 차례의 정기 연주회를 개최하며, 학기 중에도 다양한 연습과 앙상블을 통해 단원들의 음악적 역량을 키우고 있습니다.<br>
+                악기 연주 경험이 없는 초보자부터 숙련자까지 누구나 참여할 수 있으며,<br>
+                함께 연주하며 음악의 조화와 팀워크를 경험할 수 있습니다.<br><br>
+                KHUMDOP는 음악을 통해 단원 간의 유대감을 형성하며,<br>연주를 통해 관객들에게 클래식 음악의 아름다움을 전달하고자 노력합니다.<br>
+                음악을 사랑하는 경희인이라면 누구든지 함께할 수 있는 열린 동아리로,<br>단순한 연주를 넘어 음악적 교감을 추구합니다.<br>
+                KHUMDOP는 아름다운 선율을 통해 모두가 하나 되는 경험을 선사하는 특별한 동아리입니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/khu/mdop_84.jpg" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 84회 정기연주회</h3>
+                        <p>2024-08-31<br>부천아트센터 콘서트홀</p>
+                        <a href="../classicConcertPages/MDOP_84.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/khu/mdop_83.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 83회 정기연주회</h3>
+                        <p>2024-03-01<br><br>⇒ <a href="https://youtu.be/-50gZ8vs9VA?si=WVZDdmNw7Q_YeoNe" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/khu/mdop_82.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 82회 정기연주회</h3>
+                        <p>2023-09-02<br><br>⇒ <a href="https://youtu.be/GuIwiHEcn0s?si=fU5Tg9W228nxKx3m" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/khu/mdop_81.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 81회 정기연주회</h3>
+                        <p>2023-03-04<br><br>⇒ <a href="https://youtu.be/ep0sHQbI-wo?si=RQbKbvsnSFZyp_6-" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/khu/mdop_80.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 80회 정기연주회</h3>
+                        <p>2022-09-03<br><br>⇒ <a href="https://youtu.be/9T3eb1j8ucU?si=NgCaSzUOQRVecBEN" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1977<span class="small-text">&nbsp;&nbsp;경희대학교 MDOP 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018 <span class="small-text">&nbsp;&nbsp;제 72 &middot; 73회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2018.03.03 지휘 | 이은구   협연 | 이기준<br></p>
+                        <p>2018.08.31 지휘 | 박영태   악장 | 박성연   협연 | 이연지<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2019 <span class="small-text">&nbsp;&nbsp;제 74 &middot; 75회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2019.03.02 지휘 | 강성우   악장 | 장세민<br></p>
+                        <p>2019.09.07 지휘 | 김성욱   협연 | 홍승아<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020 <span class="small-text">&nbsp;&nbsp;제 76회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2020 지휘 | 오성빈<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;제 77 &middot; 78회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021 지휘 | 오성빈<br></p>
+                        <p>2021.09.03 지휘 | 오성빈   악장 | 이세형   협연 | 전재현<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 79 &middot; 80회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.03.05 지휘 | 오성빈   협연 | 홍현<br></p>
+                        <p>2022.09.03 지휘 | 박대명   협연 | 박건우<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 81 &middot; 82회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.03.04 지휘 | 박대명   악장 | 강수연<br></p>
+                        <p>2023.09.02 지휘 | 한상준   악장 | 반세빈<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 83 &middot; 84회 정기연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2024.03.01 지휘 | 박대명   협연 | 박건우<br></p>
+                        <p>2024.11.08 지휘 | 박대명   협연 | 박원민<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>

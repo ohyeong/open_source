@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+</head>
+
+<body data-club="Hanaklang">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" >Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a> 
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a> 
+    </div>
+    
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+                </div>
+                <div class="concert-info">
+                    <h1 id="concert-title"></h1>
+                    <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                    <p><strong>지휘: </strong>신주용</p>
+                    <p><strong>악장: </strong>유재휘</p>
+                    <p><strong>일자: </strong><span id="concert-date"></span></p>
+                    <p><strong>시간: </strong><span id="concert-time"></span></p>
+                    <p><strong>장소: </strong><span id="concert-location"></span></p>
+                    <br><br><br>
+                    <div class="buttons">
+                        <button>전석무료</button>
+
+                        <button class="heart-button">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 공유 팝업 -->
+        <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+        
+        <section id="conductor">
+            <h1>지휘자 소개</h1>
+            <div class="conductor-info">
+                <img src="../../../public/images/conductors/hanaklang_shinjuyoung.jpg" alt="Conductor">
+                <div class="conductor-details">
+                <p><h2>지휘 | 신주용</h2>
+                    <br>러시아 무소르그스키 국립음악원 부속 컬리지
+                    <br>러시아 글린카 국립음악원 부속 컬리지 실기수석 졸업
+                    <br>러시아 탈랴티 국제콩쿠르 3위, 볼가그리드 국제콩쿨 현대음악상, 음악춘추 콩쿠르 1위
+                    <br>탈랴티 필하모닉, 무소르그스키 음악원 컬리지, 추계윈드, 추케심포니 오케스트라 협연
+                   <br>글린카 국립음악원 컬리지 오케스트라 지휘
+                    <br>율 챔버오케스트라 지휘, 대학 아마추어 오케스트라 연합 AOU 지휘,
+                    <br>강남윈드오케스트라 수석, 소리얼 오케스트라 객원 수석
+                    <br>수원 쳄버 앙상블, 광주 프라임 청소년 오케스트라 지휘자
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Offenbach.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>J. Offenbach (1819. 6. 20 - 1880. 10. 5)</h2>
+                        <br>자크 오펜바흐는 독일 태생의 프랑스 작곡가로, 주로 오페레타와 오페라 코미크로 큰 성공을 거둔 인물이다. 그는 오페레타의 창시자 중 한 명으로 평가받으며, 유머와 풍자를 담은 밝고 경쾌한 작품으로 널리 사랑받았다. 오펜바흐의 음악은 독특한 리듬감과 감각적인 멜로디로 청중을 사로잡았으며, 특히 파리에서 그의 작품들은 큰 인기를 끌었다.
+                        <br><br>오펜바흐의 대표작으로는 천국과 지옥 (Orphée aux Enfers), 아름다운 헬레나 (La Belle Hélène), 그리고 그의 미완성 오페라 호프만의 이야기 (Les Contes d'Hoffmann)가 있다. 천국과 지옥은 그의 가장 유명한 작품 중 하나로, 특히 "캉캉" 춤 음악은 대중적으로 널리 알려져 많은 사랑을 받는다. 호프만의 이야기는 오펜바흐의 마지막 작품으로, 더욱 진지한 성격을 지니며, 그의 다양한 작곡 스타일을 잘 보여준다.
+                        <br><br>오펜바흐의 음악은 경쾌하고 유쾌한 분위기 속에서도 풍부한 감정과 세련된 멜로디가 담겨 있어, 당시 파리의 화려한 사교 문화를 반영한다. 그는 청중들에게 즐거움과 웃음을 선사하며 오페레타 장르를 대중적으로 정착시켰고, 그의 영향은 후대의 뮤지컬과 경쾌한 오페라 작품들에까지 이어졌다. 오펜바흐의 작품들은 지금도 자주 공연되며, 그의 유쾌한 음악적 유산은 많은 이들에게 여전히 큰 기쁨을 선사하고 있다.
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Tchaikovsky.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>P. I. Tchaikovsky (1840. 5. 7 - 1893. 11. 6)</h2>
+                        <br>표트르 일리치 차이콥스키는 러시아의 대표적인 낭만주의 작곡가로, 강렬한 감정 표현과 풍부한 멜로디로 많은 사랑을 받는 음악을 남겼다. 그는 서구적 작곡 기법과 러시아적인 민속 요소를 결합하여 독창적인 음악 스타일을 만들었으며, 그의 작품은 강렬한 감정과 극적인 전개로 청중을 매료시킨다.
+                        <br><br>차이콥스키의 대표작으로는 발레 백조의 호수 (Swan Lake), 호두까기 인형 (The Nutcracker), 잠자는 숲속의 미녀 (The Sleeping Beauty) 등이 있다. 이 발레들은 화려한 멜로디와 오케스트라 편성으로 인해 지금까지도 가장 많이 공연되는 발레 음악으로 사랑받고 있다. 또한 교향곡 제6번 "비창" (Pathétique Symphony), 피아노 협주곡 제1번, 그리고 로미오와 줄리엣 서곡 환상곡은 그의 대표적인 관현악 작품으로, 감정의 깊이와 드라마틱한 전개로 청중에게 큰 감동을 준다.
+                        <br><br>차이콥스키는 러시아 내에서뿐만 아니라 유럽과 미국에서도 활동하며 국제적인 명성을 쌓았으며, 그의 음악은 대중적인 인기를 끌었다. 그의 작품들은 화려한 멜로디, 풍부한 감정 표현, 그리고 극적인 구성으로 잘 알려져 있으며, 오늘날까지도 전 세계 음악회와 발레 무대에서 자주 연주되며 사랑받고 있다. 차이콥스키는 러시아 음악을 세계적인 수준으로 끌어올린 작곡가로, 그의 음악적 유산은 여전히 클래식 음악의 중요한 부분으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Dvorak.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>A. Dvořák (1841. 9. 8 - 1904. 5. 1)</h2>
+                        <br>안토닌 드보르자크는 체코의 대표적인 작곡가로, 보헤미안 민속 음악의 요소를 서양 고전 음악에 성공적으로 융합한 인물이다. 그의 음악은 민속적 색채와 아름다운 멜로디가 돋보이며, 전통과 현대성을 결합해 독창적인 스타일을 확립했다. 드보르자크는 특히 체코의 문화와 자연에 대한 깊은 애정을 음악에 담아내어, 민족적 정체성을 잘 표현한 작곡가로 평가받는다.
+                        <br><br>드보르자크의 대표작으로는 교향곡 제9번 "신세계로부터" (Symphony No. 9 "From the New World"), 슬라브 무곡 (Slavonic Dances), 그리고 첼로 협주곡 B단조 등이 있다. 신세계 교향곡은 드보르자크가 미국에 머물던 시기에 작곡한 작품으로, 미국의 민속 음악과 체코적 요소가 결합된 독특한 스타일을 보여주며, 오늘날 그의 가장 유명한 작품 중 하나로 꼽힌다. 슬라브 무곡은 체코와 슬라브 지역의 춤과 멜로디를 바탕으로 경쾌하고 활기찬 리듬이 특징이며, 민속적 분위기를 잘 담아내어 큰 인기를 얻었다.
+                        <br><br>드보르자크는 미국에서 잠시 머무르며 뉴욕 음악원 원장으로 활동하며, 현지 음악과 전통을 바탕으로 많은 영감을 얻었다. 그의 음악은 민속적 요소를 대중적으로 풀어낸 방식으로 인해 청중에게 큰 감동을 주며, 오늘날까지도 전 세계적으로 널리 사랑받고 있다. 드보르자크의 작품들은 민족적 정체성과 낭만적인 감성을 담아내며, 클래식 음악의 중요한 유산으로 남아 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>J. Offenbach: Orphee aux enfers, Overture</h2>
+            <p>자크 오펜바흐의 "지옥의 오르페우스 서곡 (Orphée aux enfers, Overture)"은 그의 오페레타 "지옥의 오르페우스"를 여는 곡으로, 유쾌하고 활기찬 분위기를 자아낸다. 그리스 신화의 오르페우스 이야기를 패러디한 이 작품은 풍자적이고 익살스러운 요소로 가득하며, 서곡은 다채로운 선율과 리듬으로 그 특유의 경쾌함을 표현한다. 특히 마지막 부분에 등장하는 빠르고 활기찬 "캉캉 (Can-can)" 선율이 유명하며, 이 선율은 오페레타의 밝고 유머러스한 성격을 극대화하여 청중에게 큰 즐거움을 선사한다.
+            </p>
+            <h2>P. I. Tchaikovsky - Swan Lake (Op. 20)</h2>
+            <p>표트르 일리치 차이콥스키의 "백조의 호수"는 그의 첫 번째 발레 작품으로, 공주 오데트와 왕자 지그프리트의 사랑 이야기를 서정적이고 드라마틱한 음악으로 표현한 걸작이다. 차이콥스키는 이 작품에서 환상적이고 비극적인 줄거리를 감성적이고 풍부한 멜로디로 묘사했으며, 유명한 "백조의 춤"과 "정경" 같은 곡들은 발레의 우아함과 서정성을 극대화한다. 그의 독창적인 관현악 편성과 감정적인 표현은 이 발레를 클래식 음악과 무용계에서 가장 사랑받는 작품 중 하나로 자리 잡게 했다.
+            </p>
+
+            <h2>A. Dvořák - Symphony No.9 in E minor (Op.95) 'From the New World'</h2>
+            <p>
+                안토닌 드보르자크의 "교향곡 제9번 E단조 (Op.95), '신세계로부터'"는 1893년에 작곡된 작품으로, 드보르자크가 뉴욕에서 미국 국립음악원 원장으로 재직하던 시절에 완성되었다. 그는 이 작품에서 미국의 음악적 전통에 깊이 매료되어, 아프리카계 미국인 영가와 원주민 음악에서 영감을 받아 작곡했다. 동시에, 그의 보헤미안 정체성과 고향에 대한 향수를 담아내며, 두 문화가 어우러진 독특한 교향곡을 탄생시켰다. 이 교향곡은 대담하고 감정이 풍부하며, 듣는 이에게 새로운 세계를 탐험하는 듯한 느낌을 전달하는 강력한 서사성을 갖추고 있다.
+                </p>
+            <h3>   1악장 - Adagio - Allegro molto</h3> 
+            <p>서주 부분의 신비롭고 조용한 멜로디로 시작해, 곧 이어 강렬하고 힘찬 주제로 발전한다. 이 주제는 마치 신세계의 개척자들이 느꼈을 설렘과 두려움을 상징하는 듯하다. 관악기와 현악기의 대조적인 음색이 교차하며, 전체적인 긴장감과 드라마틱한 분위기를 더해준다. 특히 주요 주제는 새로운 모험의 출발을 알리는 듯한 활기차고 진취적인 느낌을 준다.
+            </p>
+            <h3> 2악장 - Largo</h3>
+            <p> 이 악장은 서정적인 잉글리시 호른의 독주로 유명하며, 깊은 향수와 고향에 대한 그리움을 표현한다. 이 멜로디는 "고잉 홈(Going Home)"이라는 이름으로도 잘 알려져 있으며, 단순하고 감성적인 선율이 듣는 이의 마음을 울린다. 느리고 평화로운 리듬은 마치 넓은 초원을 지나가는 듯한 고요한 느낌을 준다. 악장의 후반부에는 더욱 풍성한 오케스트라의 연주가 더해져 감정의 깊이를 더욱 강하게 느끼게 한다.
+            </p>
+            <h3> 3악장 - Scherzo: Molto vivace</h3>
+            <p>빠르고 활기찬 리듬을 지니며, 전통적인 보헤미안 무곡과 미국 원주민 춤에서 영감을 받은 듯한 요소들이 느껴진다. 현악기와 목관악기가 빠르게 교차하며 경쾌한 분위기를 형성하고, 이는 마치 축제의 한 장면을 묘사하는 듯한 활발한 에너지를 전달한다. 이 악장은 드보르자크의 민속적 감수성과 미국의 독특한 리듬감이 잘 어우러진 부분이다.
+            </p>
+            <h3> 4악장 - Allegro con fuoco</h3>
+            <p>마지막 악장은 강렬하고 힘찬 선율로 시작하며, 마치 큰 여정을 마무리하는 느낌을 준다. 앞서 등장한 주제들이 다시 재현되면서 전체적인 통일감을 주며, 교향곡의 클라이맥스를 이루는 듯한 웅장한 피날레로 마무리된다. 이 악장은 개척자의 정신과 용기를 상징하며, 강한 에너지가 넘치는 피날레는 드라마틱하고 감동적인 여운을 남긴다.
+            </p>
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 서울특별시 성동구 왕십리로 222</p>
+            <p><strong>오시는 길:</strong> 2호선 한양대역 1번 출구, 도보 10분</p><br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-conductor">지휘자</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="share.js" defer></script>
+    <script src="classicconcert_detail.js"></script>
+</head>
+
+<body data-club="RUBATO">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" >Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item" id="current">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../classicConcert/concert_info.html" class="menu-bar-link">Classic Concert</a>
+        <span class="separator">❯</span>
+        <a href="" class="menu-bar-link"><span id="concert-link"></span></a> 
+    </div>
+    
+    <main>
+        <section id="concert-details">
+            <div class="concert-poster">
+                <img src="" alt="Concert Poster" id="concert-image">
+                </div>
+                <div class="concert-info">
+                    <h1 id="concert-title"></h1>
+                    <p><strong>주최 대학: </strong><span id="concert-univ"></span></p>
+                    <p><strong>지휘: </strong>문정민</p>
+                    <p><strong>악장: </strong>백솔미</p>
+                    <p><strong>협연: </strong>박제민</p>
+                    <p><strong>일자: </strong><span id="concert-date"></span></p>
+                    <p><strong>시간: </strong><span id="concert-time"></span></p>
+                    <p><strong>장소: </strong><span id="concert-location"></span></p>
+                    <br><br><br>
+                    <div class="buttons">
+                        <button>전석무료</button>
+
+                        <button class="heart-button">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="share-button">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 공유 팝업 -->
+        <div id="share-modal" class="share-modal">
+            <div class="share-modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>공유하기</h2>
+                <button id="kakao-share-button">카카오톡 공유하기</button>
+                <button id="clipboard-share-button">링크 복사하기</button>
+            </div>
+        </div>
+        
+        <section id="composer">
+            <h1>작곡가 소개</h1>
+            <div class="composer-info">
+                <img src="../../../public/images/composers/bruch.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>M. Bruch (1819. 6. 20 - 1880. 10. 5)</h2>
+                        <br>막스 브루흐는 독일의 낭만주의 작곡가이자 지휘자로, 감미로운 멜로디와 풍부한 감정 표현으로 많은 사랑을 받는 작품을 남긴 인물이다. 그는 다양한 장르에서 작품을 남겼지만, 특히 그의 협주곡들이 널리 사랑받으며 오늘날까지도 자주 연주되고 있다. 브루흐의 음악은 낭만적인 서정성과 명확한 형식, 그리고 대중적인 선율을 특징으로 하며, 아름다운 멜로디와 정교한 관현악 편성이 돋보인다.
+                        <br><br>브루흐의 대표작으로는 바이올린 협주곡 제1번 G단조 (Violin Concerto No. 1 in G minor), 스코틀랜드 환상곡 (Scottish Fantasy), 그리고 콜 니드라이 (Kol Nidrei)가 있다. 바이올린 협주곡 제1번은 감미롭고 서정적인 멜로디와 웅장한 오케스트라 편성으로 바이올리니스트와 청중 모두에게 큰 사랑을 받는 곡이다. 스코틀랜드 환상곡은 스코틀랜드 민속 음악에 영감을 받아 작곡된 곡으로, 민속적 색채와 서정적인 아름다움이 잘 드러나 있다.
+                        <br><br>브루흐는 생전에 작곡가로서 큰 명성을 누렸으며, 그의 작품은 서정적인 선율과 섬세한 감정 표현으로 당대의 많은 사람들에게 감동을 주었다. 그는 지휘자로도 활동하며 독일과 유럽 여러 곳에서 음악 활동을 이어갔으며, 많은 교향곡과 합창곡을 작곡했다. 브루흐의 음악은 낭만주의의 서정성을 잘 담아내고 있으며, 그의 협주곡은 오늘날까지도 많은 연주자들에 의해 사랑받으며 자주 무대에 오르고 있다.
+                </div>
+            </div>
+
+            <div class="composer-info">
+                <img src="../../../public/images/composers/Beethoven.jpg" alt="Composer">
+                <div class="composer-details">
+                    <p><h2>Ludwig van Beethoven (1770. 12. 17 - 1827. 3. 26)</h2>
+                        <br>베토벤은 고전주의와 낭만주의를 잇는 다리 역할을 한 독일의 작곡가로, 
+                        음악사에서 가장 영향력 있는 인물 중 한 명이다. 그는 피아노 소나타, 교향곡, 현악 사중주 등 다양한 장르에서 걸작을 남겼다. 
+                        그의 음악은 감정 표현의 깊이와 혁신적인 형식으로 잘 알려져 있으며, 특히 청각 장애를 극복하면서도 계속해서 뛰어난 작품을 작곡해 사람들에게 큰 감동을 주었다.
+                        <br><br>베토벤은 본에서 태어나 어린 시절부터 음악적 재능을 보였으며, 이후 빈으로 이주해 음악 활동을 펼쳤다. 
+                        그의 초기 작품들은 하이든과 모차르트의 영향을 받았으나, 점차 독자적인 스타일을 개발하여 고전 음악의 틀을 넘어서는 혁신을 이루었다. 
+                        대표적인 작품으로는 9개의 교향곡, 32개의 피아노 소나타, 오페라 피델리오, 그리고 수많은 실내악 곡들이 있다.
+                        <br><br>특히 그의 교향곡은 음악사에 큰 전환점을 가져왔다. 
+                        운명 교향곡 (교향곡 제5번)은 극적인 동기를 통해 운명과 싸우는 인간의 모습을 그렸으며, 합창 교향곡 (교향곡 제9번)에서는 '환희의 송가'를 사용해 인류애와 화합의 메시지를 전달했다.
+                        베토벤은 청각을 잃어가는 상황 속에서도 음악을 향한 열정과 창의력을 잃지 않았으며, 그의 후반기 작품들은 인간의 내면적 깊이와 철학적 성찰을 담고 있다. 
+                        그의 음악은 단순히 아름다운 선율을 넘어서, 인간의 감정과 존재의 의미를 탐구하는 깊이 있는 예술로 평가받고 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="program">
+            <h1>Program Note</h1>
+            <h2>L. V. Beethoven - Egmont Overture (Op.84)</h2>
+            <p>
+                루트비히 판 베토벤의 "에그몬트 서곡"은 괴테의 비극 "에그몬트"를 위해 작곡된 부수 음악 중 하나로, 자유와 정의를 위한 투쟁을 묘사한 작품이다. 이 곡은 네덜란드 독립을 위해 싸운 영웅 에그몬트 백작의 이야기를 반영하며, 베토벤 특유의 강렬한 감정과 극적인 전개가 돋보인다. 서곡은 어두운 도입부에서 시작해 점차 고조되며, 억압을 극복하고 승리로 나아가는 영웅적 서사를 담고 있어, 마지막에는 밝고 승리감 넘치는 멜로디로 마무리된다.
+            </p>
+            <h2>M. Bruch - Violin Concerto No.1 in G minor (Op.26)</h2>
+            <p>막스 브루흐의 "바이올린 협주곡 제1번 사단조 (Op.26)"은 낭만주의 시대의 대표적인 바이올린 협주곡으로, 서정적인 멜로디와 화려한 기교가 돋보이는 작품이다. 이 협주곡은 1868년에 발표되어, 이후 많은 바이올린 연주자들에게 사랑받으며 클래식 레퍼토리의 명작으로 자리 잡았다. 각 악장이 지닌 서정성과 강렬한 감정이 청중에게 깊은 인상을 남긴다.
+            </p>
+            <h3>   1악장 - Prelude: Allegro moderato</h3> 
+            <p>서정적인 도입부로 시작해, 바이올린이 감정적인 멜로디를 이끌며 점차 활기찬 알레그로로 전환된다. 이 악장은 긴장감과 열정을 표현하며 웅장하게 마무리되며, 오케스트라와의 대화가 드라마틱한 전개를 이룬다.
+            </p>
+            <h3> 2악장 - Adagio</h3>
+            <p> 매우 서정적이고 감성적인 악장으로, 바이올린의 부드러운 선율이 돋보인다. 이 악장은 깊은 감정을 표현하며 낭만적인 분위기를 자아내며, 마치 애잔한 사랑을 노래하는 듯한 느낌을 준다.
+            </p>
+            <h3> 3악장 - Allegro energico</h3>
+            <p>활기차고 에너지가 넘치는 피날레로, 빠르고 강렬한 리듬과 선율이 특징이다. 바이올린의 화려한 기교와 함께 곡이 역동적으로 마무리되며, 마지막까지 강렬한 에너지를 유지해 청중에게 강한 여운을 남긴다.
+            </p>
+
+            <h2>L. V. Beethoven - Symphony No.3 in E-flat major (Op.55) 'Eroica'</h2>
+            <p>
+                루트비히 판 베토벤의 "교향곡 제3번 E♭장조 (Op.55) '영웅 (Eroica)'"는 교향곡의 역사에서 매우 중요한 전환점을 이룬 작품으로, 낭만주의 음악의 서막을 열었다고 평가받는 걸작이다. 원래 나폴레옹을 기리기 위해 헌정하려 했으나, 그가 황제에 오르자 그 계획을 철회하고 단순히 '영웅 교향곡'이라는 이름으로 남겼다. 이 교향곡은 영웅적 주제와 인간 정신의 고양을 담고 있으며, 베토벤의 대담한 창의성과 새로운 음악적 비전을 잘 보여준다. 
+                </p>
+            <h3>   1악장 - Allegro con brio</h3> 
+            <p>웅장하고 힘찬 주제의 도입부로 시작하며, 영웅적이고 극적인 분위기를 자아낸다. 이 악장은 길고 복잡한 구조 속에서 다양한 주제가 발전하며, 강렬한 에너지와 서사적인 전개가 돋보인다.
+            </p>
+            <h3> 2악장 - Marcia funebre: Adagio assai</h3>
+            <p> 장송행진곡 형식의 느리고 엄숙한 악장으로, 영웅의 죽음을 애도하는 듯한 슬픔과 깊이를 표현한다. 장중하고 무게감 있는 멜로디가 계속해서 반복되며, 인간의 고통과 비극을 음악적으로 극적으로 드러낸다.
+            </p>
+            <h3> 3악장 - Scherzo: Allegro vivace</h3>
+            <p>빠르고 경쾌한 리듬의 스케르초로, 활기찬 분위기와 함께 전반적으로 생동감이 넘친다. 이 악장은 갑작스러운 전환과 리듬의 변화가 돋보이며, 베토벤 특유의 유머와 기발함이 잘 나타난다.
+            </p>
+            <h3> 4악장 - Finale: Allegro molto</h3>
+            <p>마지막 악장은 변주곡 형식으로, 웅장하고 화려한 선율이 여러 차례 변주되며 고조된다. 이 악장은 전체 교향곡의 주제를 집대성하며, 강렬한 에너지와 긍정적인 결말로 영웅적 이야기를 마무리한다.
+            </p>
+        </section>
+
+        <section id="concert-details-extra">
+            <h1>공연 세부 정보 및 에티켓</h1>
+            <p><strong>공연 장소:</strong> 경기도 부천시 원미구 부일로 365</p>
+            <p><strong>오시는 길:</strong> 1호선 중동역 하차, 북광장으로 나온 후 도보 10분 ~ 15분</p><br><br>
+            <p><strong>공연 에티켓:</strong></p>
+            <ul>
+                <li>휴대전화는 꼭 꺼두거나 비행기 모드로 설정해 주시길 바랍니다.</li>
+                <li>음식 및 음료의 공연장 반입은 금지되어 있습니다.</li>
+                <li>공연 시작 전에 미리 자리를 찾아주시고, 중간에 자리 이동은 삼가해 주시길 바랍니다.</li>
+                <li>악장과 악장 사이에 박수는 삼가주시길 바랍니다.</li>
+                <li>촬영 및 녹음은 공연 중 커튼콜 시에만 허용됩니다.</li>
+            </ul>
+        </section>
+
+        <div class="side-banner">
+            <button class="btn-info">정보</button>
+            <button class="btn-composer">작곡가</button>
+            <button class="btn-programs">프로그램</button>
+            <button class="btn-concent_details">세부정보</button>
+        </div>
+    </main>
+
+</body>
+</html>

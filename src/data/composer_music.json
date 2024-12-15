@@ -1,0 +1,892 @@
+[
+    {
+        "idx": 1,
+        "title": "Concerto for Two Violins in D minor",
+        "composer": "J.S. Bach",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 2,
+        "title": "Brandenburg Concerto No.3 in G major",
+        "composer": "J.S. Bach",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 3,
+        "title": "The Four Seasons: Spring",
+        "composer": "A. Vivaldi",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Italy",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 4,
+        "title": "The Four Seasons: Summer",
+        "composer": "A. Vivaldi",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Italy",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 5,
+        "title": "The Four Seasons: Autumn",
+        "composer": "A. Vivaldi",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Italy",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 6,
+        "title": "The Four Seasons: Winter",
+        "composer": "A. Vivaldi",
+        "era": "baroque",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Italy",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 7,
+        "title": "Cello Suites (Unaccompanied)",
+        "composer": "J.S. Bach",
+        "era": "baroque",
+        "genre": "orchestralPiece",
+        "instPreference": "cello",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 8,
+        "title": "Symphony No.3 in E-flat major 'Eroica'",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 9,
+        "title": "Symphony No.4 in B-flat major",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 10,
+        "title": "Symphony No.5 in C minor",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 11,
+        "title": "Symphony No.6 in F major 'Pastoral'",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 12,
+        "title": "Symphony No.7 in A major",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 13,
+        "title": "Symphony No.8 in F major",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 14,
+        "title": "Symphony No.35 in D major 'Haffner'",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 15,
+        "title": "Symphony No.40 in G minor",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 16,
+        "title": "Symphony No.41 in C major 'Jupiter'",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 17,
+        "title": "Piano Concerto No.5 in E-flat major 'Emperor'",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 18,
+        "title": "Piano Concerto No.3 in C minor",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Germany",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 19,
+        "title": "Violin Concerto in D Major",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Germany",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 20,
+        "title": "Cello Concerto No.2 in D major",
+        "composer": "J. Haydn",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "cello",
+        "country": "Austria",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 21,
+        "title": "Cello Concerto No.1 in C major",
+        "composer": "J. Haydn",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "cello",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 22,
+        "title": "Trumpet Concerto in E-flat major",
+        "composer": "J. Haydn",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 23,
+        "title": "Violin Concerto No.3 in G major",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 24,
+        "title": "Egmont Overture",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 25,
+        "title": "Coriolan Overture",
+        "composer": "L. van Beethoven",
+        "era": "classical",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 26,
+        "title": "Serenade No.13 in G major 'Eine kleine Nachtmusik'",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 27,
+        "title": "The Marriage of Figaro Overture",
+        "composer": "W.A. Mozart",
+        "era": "classical",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 28,
+        "title": "Symphony No.5 in B-flat major",
+        "composer": "A. Glazunov",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 29,
+        "title": "Symphony No.1 in G minor 'Winter Daydreams'",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 30,
+        "title": "Symphony No.4 in F minor",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 31,
+        "title": "Symphony No.5 in E minor",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 32,
+        "title": "Symphony No.6 in B minor 'Pathétique'",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 33,
+        "title": "Symphony No.4 in A major 'Italian'",
+        "composer": "F. Mendelssohn",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 34,
+        "title": "Symphony No.5 in D minor 'Reformation'",
+        "composer": "F. Mendelssohn",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 35,
+        "title": "Symphony No.1 in C minor",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 36,
+        "title": "Symphony No.2 in D major",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 37,
+        "title": "Symphony No.3 in F major",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 38,
+        "title": "Symphony No.4 in E minor",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 39,
+        "title": "Symphony No.4 in E-flat major 'Romantic'",
+        "composer": "A. Bruckner",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 40,
+        "title": "Symphony No.2 in C major",
+        "composer": "R. Schumann",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 41,
+        "title": "Symphony No.8 in B minor 'Unfinished'",
+        "composer": "F. Schubert",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 42,
+        "title": "Symphony No.9 in C major 'The Great'",
+        "composer": "F. Schubert",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 43,
+        "title": "Symphony No.7 in D minor",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 44,
+        "title": "Symphony No.8 in G major",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 45,
+        "title": "Symphony No.9 in E minor 'From the New World'",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 46,
+        "title": "Symphony No.2 in D major",
+        "composer": "J. Sibelius",
+        "era": "romantic",
+        "genre": "symphony",
+        "instPreference": "all",
+        "country": "Finland",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 47,
+        "title": "Piano Concerto No.2 in C minor",
+        "composer": "S. Rachmaninoff",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Russia",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 48,
+        "title": "Violin Concerto in D major",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 49,
+        "title": "Piano Concerto No.1 in B-flat minor",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 50,
+        "title": "Piano Concerto No.3 in D minor",
+        "composer": "S. Rachmaninoff",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Russia",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 51,
+        "title": "Cello Concerto No.1 in E flat major",
+        "composer": "D. Shostakovich",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "cello",
+        "country": "Russia",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 52,
+        "title": "Violin Concerto No.1 in G minor",
+        "composer": "M. Bruch",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 53,
+        "title": "Piano Concerto in A minor",
+        "composer": "R. Schumann",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Germany",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 54,
+        "title": "Violin Concerto in E minor",
+        "composer": "F. Mendelssohn",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Germany",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 55,
+        "title": "Cello Concerto in B minor",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "cello",
+        "country": "Czech",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 56,
+        "title": "Violin Concerto No.3 in B minor",
+        "composer": "C. Saint-Saëns",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "France",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 57,
+        "title": "Violin Concerto in D minor",
+        "composer": "J. Sibelius",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "violin",
+        "country": "Finland",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 58,
+        "title": "Piano Concerto in A minor",
+        "composer": "E. Grieg",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "piano",
+        "country": "Norway",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 59,
+        "title": "Cello Concerto in E minor",
+        "composer": "E. Elgar",
+        "era": "romantic",
+        "genre": "concerto",
+        "instPreference": "cello",
+        "country": "UK",
+        "eventDetailsAvailable": -1
+    },
+    {
+        "idx": 60,
+        "title": "Swan Lake Suite",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 61,
+        "title": "Danish March",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 62,
+        "title": "Romeo and Juliet Fantasy Overture",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 63,
+        "title": "Slavic March in C minor",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 64,
+        "title": "The Nutcracker Suite",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 65,
+        "title": "Symphonic Poem No.2 'Tasso'",
+        "composer": "F. Liszt",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 66,
+        "title": "Tragic Overture",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 67,
+        "title": "Academic Festival Overture",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 68,
+        "title": "Variations on a Theme by Haydn",
+        "composer": "J. Brahms",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 69,
+        "title": "Peer Gynt Suite No.1",
+        "composer": "E. Grieg",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Norway",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 70,
+        "title": "Czech Suite in D major",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 71,
+        "title": "Slavic Dances",
+        "composer": "A. Dvořák",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 72,
+        "title": "L'Arlésienne Suite No.1",
+        "composer": "G. Bizet",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "France",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 73,
+        "title": "Danse Macabre",
+        "composer": "C. Saint-Saëns",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "France",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 74,
+        "title": "Má vlast (My Country) - Vltava",
+        "composer": "B. Smetana",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Czech",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 75,
+        "title": "Finlandia",
+        "composer": "J. Sibelius",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Finland",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 76,
+        "title": "Orphée aux enfers (Orpheus in the Underworld) Overture",
+        "composer": "J. Offenbach",
+        "era": "romantic",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "France",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 77,
+        "title": "Tristan und Isolde",
+        "composer": "R. Wagner",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 78,
+        "title": "Die Meistersinger von Nürnberg",
+        "composer": "R. Wagner",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 79,
+        "title": "Tannhäuser Overture",
+        "composer": "R. Wagner",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 80,
+        "title": "Der Freischütz Overture",
+        "composer": "C.M. von Weber",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 81,
+        "title": "Oberon Overture, Op.84",
+        "composer": "C.M. von Weber",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Germany",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 82,
+        "title": "Die Zauberharfe Overture, D.644",
+        "composer": "F. Schubert",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 83,
+        "title": "Die Fledermaus Overture, Op.362",
+        "composer": "J. Strauss II",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Austria",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 84,
+        "title": "Il barbiere di Siviglia Overture, Op.11",
+        "composer": "G. Rossini",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Italy",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 85,
+        "title": "Guillaume Tell Overture, Op.49",
+        "composer": "G. Rossini",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Italy",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 86,
+        "title": "Carmen Suite No.1, Op.2",
+        "composer": "G. Bizet",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "France",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 87,
+        "title": "Masquerade Suite, Op.35",
+        "composer": "A. Khachaturian",
+        "era": "modern",
+        "genre": "orchestralPiece",
+        "instPreference": "all",
+        "country": "Armenia",
+        "eventDetailsAvailable": 0
+    },
+    {
+        "idx": 88,
+        "title": "La Gazza Ladra Overture",
+        "composer": "G. Rossini",
+        "era": "romantic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Italy",
+        "eventDetailsAvailable": 1
+    },
+    {
+        "idx": 89,
+        "title": "Eugene Onegin, Polonaise",
+        "composer": "P.I. Tchaikovsky",
+        "era": "romatic",
+        "genre": "opera",
+        "instPreference": "all",
+        "country": "Russia",
+        "eventDetailsAvailable": 1
+    }
+]

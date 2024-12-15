@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Amateur Orchestra Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="mainPage.html" class="menu-item" id="current">Home</a>
+            <a href="../introduce/introduce.html" class="menu-item">Introduce</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a> 
+            <a href="../mypages/myPage.html" class="menu-item">My Page</a>
+        </nav>
+    </header>
+
+    <!-- 이미지 슬라이더 -->
+    <div class="slider">
+        <div class="slider-images" id="slider-images"></div>
+        <div class="slider-controls">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </div>
+
+    <!-- 추천 -->
+    <div class="container">
+        <div class="content">
+            <div class="title-container">
+                <div class="title-rectangle"></div>
+                <h2 class="title">Classic Music Recommendation</h2>
+            </div>
+            
+            <div class="categories">
+                <div class="category" id="era">
+                    <h4>시대</h4>
+                    <div class="options">
+                        <div>Baroque</div>
+                        <div>Classical</div>
+                        <div>Romantic</div>
+                        <div>Modern</div>
+                    </div>
+                </div>
+                <div class="category" id="genre">
+                    <h4>형식</h4>
+                    <div class="options">
+                        <div>Symphony</div>
+                        <div>Orchestral Piece</div>
+                        <div>Concerto</div>
+                        <div>Opera</div>
+                    </div>
+                </div>
+                <div class="category" id="instPreference">
+                    <h4>악기</h4>
+                    <div class="options">
+                        <div>All</div>
+                        <div>Violin</div>
+                        <div>Cello</div>
+                        <div>Piano</div>
+                    </div>
+                </div>
+                <div class="category" id="country">
+                    <h4>국가</h4>
+                    <div class="options">
+                        <div>Austria</div>
+                        <div>Germany</div>
+                        <div>Russia</div>
+                        <div>Czech</div>
+                        <div>France</div>
+                        <div>Finland</div>
+                        <div>Italy</div>
+                        <div>Norway</div>
+                        <div>Armenia</div>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-options-container">
+                <div id="selected-options-list"></div>
+                <button id="recommend-btn">Recommendation</button>
+            </div>
+            <div class="suggested-music" style="display: none;">
+                <div class="suggested-music-label">Suggested Music</div>
+                <p id="suggested-music-title"></p>
+            </div>            
+            <div class="suggested-concert" id="suggested-concert" style="display: none;">
+                <div class="suggested-concert-label">Suggested Concert</div>
+                <div class="concert-cards"></div>
+            </div>
+        </div>   
+        
+        <div class="content">
+            <div class="title-container">
+                <div class="title-rectangle"></div>
+                <h2 class="title">Musical Instrument</h2>
+            </div>
+
+            <p class="instrument-info">
+                오케스트라 악기 구성은 기본적으로 현악기, 목관악기, 금관악기, 타악기로 이루어져 있으며, 상황에 따라 악기가 추가되거나 빠질 수도 있습니다.  <br>
+                특히 오케스트라의 규모와 편성은 작품의 요구에 따라 다양하게 구성되며, 목관악기와 금관악기의 편성에 따라 2관, 3관, 4관 편성 등으로 나뉩니다. 
+
+            </p>
+        
+            <!-- 현악기 섹션 -->
+            <div class="instrument-section">
+                <h3 class="instrument-category">현악기 (String)</h3>
+                <div class="instrument-grid">
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/violin.png" alt="Violin">
+                        <div class="instrument-name">Violin</div>
+                        <div class="instrument-abbreviation">Vn</div>
+                        <div class="instrument-description">바이올린은 가장 작은 크기와 높은 음역을 가진 악기로, 맑고 날카로운 소리를 냅니다.
+                            오케스트라에서 주로 멜로디를 연주하며, 섬세한 표현이 가능합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/viola.png" alt="Viola">
+                        <div class="instrument-name">Viola</div>
+                        <div class="instrument-abbreviation">Va, Vla</div>
+                        <div class="instrument-description">비올라는 바이올린보다 크며, 부드럽고 중후한 음색으로 중간 음역대를 채웁니다.
+                            오케스트라의 조화를 담당하며, 서정적인 멜로디를 연주합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/cello.png" alt="Cello">
+                        <div class="instrument-name">Cello</div>
+                        <div class="instrument-abbreviation">Vc, Vlc</div>
+                        <div class="instrument-description">첼로는 넓은 음역대와 인간의 목소리와 유사한 음색을 가진 악기입니다.
+                            저음과 멜로디 역할을 모두 수행하며, 깊고 감정적인 소리를 냅니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/doublebass.png" alt="Double Bass">
+                        <div class="instrument-name">Double Bass</div>
+                        <div class="instrument-abbreviation">Db, Cb</div>
+                        <div class="instrument-description">더블베이스는 현악기 중 가장 크고 낮은 음역대를 담당하며, 풍부한 소리를 냅니다.
+                            오케스트라의 저음 기반을 형성하며, 리듬과 화음을 보강합니다.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 목관악기 섹션 -->
+            <div class="instrument-section">
+                <h3 class="instrument-category">목관악기 (Woodwind)</h3>
+                <div class="instrument-grid">
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/flute.png" alt="Flute">
+                        <div class="instrument-name">Flute</div>
+                        <div class="instrument-abbreviation">Fl</div>
+                        <div class="instrument-description">플룻은 맑고 부드러운 소리를 내며, 밝고 경쾌한 음색이 특징입니다.
+                            서정적인 멜로디와 화려한 장식음을 통해 생동감을 더합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/oboe.png" alt="Oboe">
+                        <div class="instrument-name">Oboe</div>
+                        <div class="instrument-abbreviation">Ob</div>
+                        <div class="instrument-description">오보에는 독특한 음색을 가진 더블 리드 악기로 우아한 분위기를 만듭니다.
+                            오케스트라 조율에 사용되며, 시작 선율을 자주 연주합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/clarinet.png" alt="Clarinet">
+                        <div class="instrument-name">Clarinet</div>
+                        <div class="instrument-abbreviation">Cl, Cla</div>
+                        <div class="instrument-description">클라리넷은 넓은 음역과 다양한 음색을 가진 악기로, 부드럽고 따뜻한 소리를 냅니다.
+                            클래식뿐 아니라 재즈 등 다양한 장르에서 활발히 사용됩니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/bassoon.png" alt="Bassoon">
+                        <div class="instrument-name">Bassoon</div>
+                        <div class="instrument-abbreviation">Bn, Bsn, Fg</div>
+                        <div class="instrument-description">바순은 낮고 중후한 음색을 내며, 저음역대를 담당하는 더블 리드 악기입니다.
+                            독특한 음향으로 음악의 깊이를 더하며, 멜로디 역할도 수행합니다.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 금관악기 섹션 -->
+            <div class="instrument-section">
+                <h3 class="instrument-category">금관악기 (Brass)</h3>
+                <div class="instrument-grid">
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/trumpet.png" alt="Trumpet">
+                        <div class="instrument-name">Trumpet</div>
+                        <div class="instrument-abbreviation">Tp, Trp</div>
+                        <div class="instrument-description">트럼펫은 밝고 강렬한 소리로, 금관악기 중 가장 높은 음역대를 담당합니다.
+                            영웅적이고 웅장한 분위기를 연출하며, 빠르고 화려한 연주가 가능합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/trombone.png" alt="Trombone">
+                        <div class="instrument-name">Trombone</div>
+                        <div class="instrument-abbreviation">Tb, Trb</div>
+                        <div class="instrument-description">트럼본은 슬라이드로 음정을 조절하며, 웅장하고 중후한 소리를 냅니다.
+                            강렬한 악센트와 부드러운 음색을 모두 표현할 수 있습니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/horn.png" alt="Horn">
+                        <div class="instrument-name">Horn</div>
+                        <div class="instrument-abbreviation">Hn, Hr, Hrn</div>
+                        <div class="instrument-description">호른은 부드럽고 풍부한 음색으로, 조화로운 사운드를 만들어냅니다.
+                            우아하고 자연스러운 소리를 통해 음악에 깊이를 더합니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/tuba.png" alt="Tuba">
+                        <div class="instrument-name">Tuba</div>
+                        <div class="instrument-abbreviation">Ta, Tuba</div>
+                        <div class="instrument-description">튜바는 금관악기 중 가장 낮은 음역대를 담당하며, 깊고 묵직한 소리를 냅니다.
+                            오케스트라의 기반을 형성하며, 리듬과 화음을 보강합니다.</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 타악기 섹션 -->
+            <div class="instrument-section percussion">
+                <h3 class="instrument-category">타악기 (Percussion)</h3>
+                <div class="instrument-grid percussion-grid">
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/timpani.png" alt="Timpani">
+                        <div class="instrument-name">Timpani</div>
+                        <div class="instrument-abbreviation">Tim</div>
+                        <div class="instrument-description">팀파니는 조율 가능한 타악기로, 북소리를 통해 웅장한 분위기를 연출합니다.
+                            오케스트라의 긴장감과 클라이맥스를 강조하는 데 사용됩니다.</div>
+                    </div>
+                    <div class="instrument-card">
+                        <img src="../../../public/images/instruments/cymbals.png" alt="Cymbals">
+                        <div class="instrument-name">Cymbals</div>
+                        <div class="instrument-abbreviation">Cy</div>
+                        <div class="instrument-description">심벌즈는 두 개의 금속판을 부딪혀 강렬하고 선명한 소리를 냅니다.
+                            강렬한 충격음을 통해 음악의 절정을 강조합니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <script src="banner.js"></script>
+    <script src="recommend.js"></script>
+</body>
+</html>

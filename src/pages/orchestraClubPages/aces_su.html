@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concert_info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <a href="../home/mainPage.html" class="logo">
+            Seoul Armateur<br>Orchestra Club
+        </a>
+        <nav class="menu">
+            <a href="../home/mainPage.html" class="menu-item">Home</a>
+            <a href="../orchestraClub/orchestraClub.html" class="menu-item" id="current">Orchestra Club</a>
+            <a href="../classicConcert/concert_info.html" class="menu-item">Classic Concert</a>
+            <a href="../mypages/myPage.html" class="menu-item">My Pages</a>
+        </nav>        
+    </header>
+
+    <!-- 현재 메뉴 표시 바 -->
+    <div class="current-menu-bar">
+        <a href="../home/mainPage.html" class="menu-bar-link">
+            <img src="../../../public/images/home_emoji.png" alt="홈 로고">
+        </a>
+        <span class="separator">❯</span>
+        <a href="../orchestraClub/orchestraClub.html" class="menu-bar-link">Orchestra Club</a>
+        <span class="separator">❯</span>
+        <span class="current-page">ACES</span>
+    </div>
+
+    <!-- 왼쪽 고정된 버튼 -->
+    <div class="sidebar">
+        <button class="btn-intro active">소개</button>
+        <button class="btn-history">연혁</button>
+    </div>
+
+    <main>
+        <!-- 소개 섹션 -->
+        <div class="section-intro" id="intro">
+            <img src="../../../public/images/orchestra_photo/Sogang_aces.png" alt="Orchestra">
+            <div class="intro-text"><br>“클래식 음악을 좋아하는 사람이라면 누구나 함께할 수 있는 서강대 유일의 오케스트라 동아리"<br</div>
+            <div class="description">
+                <br>서강오케스트라 ACES는 클래식을 연주하는 서강대학교 아마추어 오케스트라 동아리입니다.<br><br>
+                클래식은 수백 년 동안 가치를 인정받아온 음악으로,<br>
+                ACES는 그 속에 담긴 감정과 아름다움을 재현하며 진정한 삶의 자양분을 쌓아가고 있습니다.<br>
+                혼자가 아닌 함께 연주하며 팀워크와 화합의 가치를 몸소 배우며, 단원들과 유대감을 쌓아갑니다.<br><br>
+                매년 5월과 11월에 정기 연주회를 개최하고 있으며,<br>
+                음악 전공자가 아니어도 클래식에 대한 열정과 관심만 있다면 누구나 입단 가능합니다.<br><br>
+                정기 연습, MT, 음악회 관람 등 다양한 활동으로 단원 간 친밀함을 다지며,<br>
+                비대면 면접과 수시 오디션을 통해 신입 단원을 모집합니다.<br><br>
+                ACES는 음악을 통해 깊은 팀워크와 성장을 경험할 수 있는 특별한 동아리입니다.<br>
+            </div>
+        </div>        
+
+        <!-- 연혁 섹션 -->
+        <div class="section-history" id="history">
+            <!-- 예매 정보 섹션 -->
+            <div class="history-container">
+                <!-- 첫 번째 항목: 세부 정보 버튼 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/Sogang/aces_fall_28.png" alt="연주회 이미지 1">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 28회 가을연주회</h3>
+                        <p>2024-11-15<br>도봉구민회관 하모니홀</p>
+                        <a href="../classicConcertPages/ACES_28.html" class="btn-more">세부 정보</a>
+                    </div>
+                </div>
+                
+                <!-- 나머지 항목: 이전 공연 바로가기 -->
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/Sogang/aces_spring_18.jpg" alt="연주회 이미지 2">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 18회 봄연주회</h3>
+                        <p>2024-05-11<br><br>⇒ <a href="https://youtu.be/fAM_RmX8KKc?si=meR735-oylYiEuw4" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/Sogang/aces_fall_27.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 27회 가을연주회</h3>
+                        <p>2023-11-26<br><br>⇒ <a href="https://youtu.be/rszQHLSka4Q?si=iN2XjriGt6Nsrcbv" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/Sogang/aces_spring_17.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 17회 봄연주회</h3>
+                        <p>2023-05-27<br><br>⇒ <a href="https://youtu.be/g05asjiCXO4?si=eBoIsWI7RZ317_Yq" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-image">
+                        <img src="../../../public/images/concert_poster/Sogang/aces_fall_26.jpg" alt="연주회 이미지 3">
+                    </div>
+                    <div class="reservation-info">
+                        <h4><u>관현악</u></h4>
+                        <h3>제 26회 가을연주회</h3>
+                        <p>2022-11-26<br><br>⇒ <a href="https://youtu.be/cQaJobm-GJw?si=ETEsFR8KC_QLhP0Q" class="btn-link">이전 공연 영상 바로가기</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 타임라인 섹션 -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">1994<span class="small-text">&nbsp;&nbsp;서강대학교 ACES 창단</span></div>
+                    <div class="timeline-content">
+                        <p><br></p>
+                        <p><br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 <span class="small-text">&nbsp;&nbsp;ACES-E 온택트 연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2021.03.07 ACES-E 온택트 연주회<br></p>
+                        <p>2021.09.08 ACES-E 온택트 연주회<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 <span class="small-text">&nbsp;&nbsp;제 16회 봄연주회, 제 26회 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2022.05.28 단장 | 오윤석   지휘 | 박대명   악장 | 김동후<br></p>
+                        <p>2022.11.26 단장 | 오윤석   지휘 | 박대명   협연 | 이규원, 김동후<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 <span class="small-text">&nbsp;&nbsp;제 17회 봄연주회, 제 27회 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.05.27 단장 | 조수민   지휘 | 장예은<br></p>
+                        <p>2023.11.26 단장 | 조수민   지휘 | 박대명   악장 | 권동원<br></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 <span class="small-text">&nbsp;&nbsp;제 18회 봄연주회, 제 28회 가을연주회</span></div>
+                    <div class="timeline-content">
+                        <p>2023.05.27 단장 | 이채윤   지휘 | 박대명   악장 | 최현아<br></p>
+                        <p>2023.11.26 단장 | 이채윤   지휘 | 박대명   악장 | 최현아<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="scroll-navigation.js"></script>
+
+</body>
+</html>
