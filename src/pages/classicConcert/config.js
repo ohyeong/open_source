@@ -1,3 +1,3 @@
-const API_KEY_MAP = '';
-const API_KEY_WEATHER = '';
-const API_KEY_SEARCH = '';
+const API_KEY_MAP = '2d22334333c1fbe904d33a49e81497d7';
+const API_KEY_WEATHER = '6d615c63207715df50b34dc88ae90f29';
+const API_KEY_SEARCH = '3b47df4ba5a3ab76842fa8d949e83af4';
