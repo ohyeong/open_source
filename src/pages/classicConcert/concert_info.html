@@ -41,18 +41,16 @@
     
     <div id="map"></div>
     <script type="text/javascript">
-        const kakaoScript = document.createElement('script');
-        kakaoScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY_MAP}&libraries=services`;
-        document.head.appendChild(kakaoScript);
-
-        kakaoScript.onload = () => {
-            console.log("Kakao Maps SDK loaded successfully.");
-            // 추가적인 Kakao Maps 초기화 코드를 여기에 작성
+        const script = document.createElement('script');
+        script.src = './src/pages/classicConcert/config.js'; // config.js 경로
+        script.onload = () => {
+            // API 키를 동적으로 설정
+            const mapScript = document.createElement('script');
+            mapScript.type = 'text/javascript';
+            mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${API_KEY_MAP}&libraries=services`;
+            document.head.appendChild(mapScript);
         };
-    
-        kakaoScript.onerror = () => {
-            console.error("Failed to load Kakao Maps SDK. Check the API key.");
-        };
+        document.head.appendChild(script);
     </script>    
     
     <div class="search-container-wrapper">
