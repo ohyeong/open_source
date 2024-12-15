@@ -23,4 +23,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # 프로젝트의 루트 디렉터리
+        publish_dir: ./dist  # 프로젝트의 루트 디렉터리
